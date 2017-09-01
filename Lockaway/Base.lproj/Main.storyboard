@@ -102,6 +102,17 @@
                                     <action selector="sendLockMessage" destination="Onu-TL-6bD" eventType="touchUpInside" id="sz8-t2-nfE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihs-Zw-GrD">
+                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5Gd-8p-AoJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="6Xu-6T-B1K"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Link"/>
+                                <connections>
+                                    <action selector="close" destination="pQo-gS-WNp" eventType="touchUpInside" id="r8s-av-5By"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -111,7 +122,9 @@
                             <constraint firstItem="fSG-5c-w7v" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="80" id="OmF-Ki-0DU"/>
                             <constraint firstItem="7qT-iK-iIl" firstAttribute="trailing" secondItem="jh7-sF-JzB" secondAttribute="trailingMargin" id="QmZ-8E-anv"/>
                             <constraint firstItem="fSG-5c-w7v" firstAttribute="centerX" secondItem="jh7-sF-JzB" secondAttribute="centerX" id="RRK-t0-QYY"/>
+                            <constraint firstItem="Ihs-Zw-GrD" firstAttribute="top" secondItem="FZW-KB-wwa" secondAttribute="bottom" constant="-10" id="dCK-ez-57R"/>
                             <constraint firstItem="EEQ-hg-e3i" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="-80" id="dXe-hj-a4b"/>
+                            <constraint firstItem="Ihs-Zw-GrD" firstAttribute="leading" secondItem="jh7-sF-JzB" secondAttribute="leadingMargin" constant="-10" id="mVQ-wa-JiK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -137,6 +150,7 @@
     </scenes>
     <resources>
         <image name="Connect" width="176" height="164"/>
+        <image name="Link" width="30" height="30"/>
         <image name="Unlocked" width="140" height="140"/>
     </resources>
 </document>

@@ -44,5 +44,26 @@ class LockController: UIViewController {
         }
     }
     
+    @IBAction func close() {
+        let alert = UIAlertController(title: "Pair Again?",
+                                      message: "This will set your device to pairing mode until it is paired with the Magic Lock desktop app",
+                                      preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Pair",
+                                      style: .destructive,
+                                      handler: { action in
+                                        SVProgressHUD.dismiss()
+                                        self.isLoading = false
+                                        let ud = UserDefaults.standard
+                                        ud.removeObject(forKey: DiscoveredKey)
+                                        ud.synchronize()
+                                        self.dismiss(animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel",
+                                      style: .cancel,
+                                      handler: { action in
+                                        alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
     
 }

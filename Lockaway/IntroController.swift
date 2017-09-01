@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 fileprivate let PromotionUrl = "https://jsonpipe.cyborch.com/"
-fileprivate let key = "IsDiscovered"
+let DiscoveredKey = "IsDiscovered"
 
 class IntroController: UIViewController {
 
@@ -31,7 +31,7 @@ class IntroController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         // Move on to next screen immediately, if already paired
         let ud = UserDefaults.standard
-        if ud.bool(forKey: key) {
+        if ud.bool(forKey: DiscoveredKey) {
             self.performSegue(withIdentifier: "Paired", sender: nil)
         } else {
             discoverable?.startAdvertise(manager: manager)
@@ -50,7 +50,7 @@ class IntroController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ud = UserDefaults.standard
-        ud.set(true, forKey: key)
+        ud.set(true, forKey: DiscoveredKey)
         ud.synchronize()
     }
 }
