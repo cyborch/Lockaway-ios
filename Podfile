@@ -1,6 +1,5 @@
-platform :ios, '10.0'
-
 target 'Lockaway' do
+  platform :ios, '10.0'
   use_frameworks!
 
   # Pods for Lockaway
@@ -10,4 +9,12 @@ target 'Lockaway' do
   pod 'ReachabilitySwift', '~> 3.0'
   pod 'SVProgressHUD', '~> 2.1'
   
+end
+
+target 'Watch Extension' do
+  platform :watchos, '3.0'
+  use_frameworks!
+
+  # Pods for Watch
+  pod 'LockMessage', :path => '../LockMessage'
 end

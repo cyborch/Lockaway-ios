@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055E7379B147F6DB16DEAAF4 /* Pods_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */; };
 		55EDAFDECA18B8356CB82696 /* Pods_Lockaway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667F8442C814F6FAA12AC9D7 /* Pods_Lockaway.framework */; };
 		D61B90E41F5895D80094885A /* LockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B90E31F5895D80094885A /* LockController.swift */; };
 		D61B90E71F5896660094885A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B90E61F5896660094885A /* Service.swift */; };
@@ -18,12 +19,65 @@
 		D69926E51F5452140056AE4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69926E31F5452140056AE4C /* LaunchScreen.storyboard */; };
 		D69926ED1F54527F0056AE4C /* Discoverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69926EC1F54527F0056AE4C /* Discoverable.swift */; };
 		D69926FD1F54AF960056AE4C /* SocketID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69926FC1F54AF960056AE4C /* SocketID.swift */; };
+		D6D69E391F597BE400CB1DE6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D69E371F597BE400CB1DE6 /* Interface.storyboard */; };
+		D6D69E3B1F597BE400CB1DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D69E3A1F597BE400CB1DE6 /* Assets.xcassets */; };
+		D6D69E421F597BE400CB1DE6 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6D69E411F597BE400CB1DE6 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6D69E491F597BE400CB1DE6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E481F597BE400CB1DE6 /* InterfaceController.swift */; };
+		D6D69E4B1F597BE400CB1DE6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E4A1F597BE400CB1DE6 /* ExtensionDelegate.swift */; };
+		D6D69E4D1F597BE400CB1DE6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */; };
+		D6D69E4F1F597BE400CB1DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D69E4E1F597BE400CB1DE6 /* Assets.xcassets */; };
+		D6D69E531F597BE400CB1DE6 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6D69E351F597BE400CB1DE6 /* Watch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6D69E431F597BE400CB1DE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69926CF1F5452140056AE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D69E401F597BE400CB1DE6;
+			remoteInfo = "Watch Extension";
+		};
+		D6D69E511F597BE400CB1DE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69926CF1F5452140056AE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D69E341F597BE400CB1DE6;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6D69E571F597BE400CB1DE6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6D69E421F597BE400CB1DE6 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D69E5B1F597BE400CB1DE6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D6D69E531F597BE400CB1DE6 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		389F77474B740AE3B68E507F /* Pods-Lockaway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lockaway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lockaway/Pods-Lockaway.debug.xcconfig"; sourceTree = "<group>"; };
 		55C85A8B4FCB57B92A55D080 /* Pods-Lockaway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lockaway.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lockaway/Pods-Lockaway.release.xcconfig"; sourceTree = "<group>"; };
+		6043FEBB18E5818C3542ABD8 /* Pods_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		667F8442C814F6FAA12AC9D7 /* Pods_Lockaway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lockaway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FCD0E53E332240839F79B1 /* Pods-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		96987384198F36F5299836FC /* Pods-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		D61B90E31F5895D80094885A /* LockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockController.swift; sourceTree = "<group>"; };
 		D61B90E61F5896660094885A /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		D61B90E81F5896930094885A /* SocketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketDelegate.swift; sourceTree = "<group>"; };
@@ -36,14 +90,41 @@
 		D69926E61F5452140056AE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69926EC1F54527F0056AE4C /* Discoverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discoverable.swift; sourceTree = "<group>"; };
 		D69926FC1F54AF960056AE4C /* SocketID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketID.swift; sourceTree = "<group>"; };
+		D6D69E351F597BE400CB1DE6 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D69E381F597BE400CB1DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D6D69E3A1F597BE400CB1DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D69E3C1F597BE400CB1DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D69E411F597BE400CB1DE6 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D69E471F597BE400CB1DE6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D6D69E481F597BE400CB1DE6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D6D69E4A1F597BE400CB1DE6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D6D69E4E1F597BE400CB1DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D69E501F597BE400CB1DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18AED84AADE140E7172D0A33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D69926D41F5452140056AE4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55EDAFDECA18B8356CB82696 /* Pods_Lockaway.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D69E3E1F597BE400CB1DE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055E7379B147F6DB16DEAAF4 /* Pods_Watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				667F8442C814F6FAA12AC9D7 /* Pods_Lockaway.framework */,
+				6043FEBB18E5818C3542ABD8 /* Pods_Watch.framework */,
+				F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				D69926D91F5452140056AE4C /* Lockaway */,
+				D6D69E361F597BE400CB1DE6 /* Watch */,
+				D6D69E451F597BE400CB1DE6 /* Watch Extension */,
 				D69926D81F5452140056AE4C /* Products */,
 				F58DF90BF32705F8181697BA /* Pods */,
 				42EDC630EF15B684EB2F6545 /* Frameworks */,
@@ -99,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				D69926D71F5452140056AE4C /* Lockaway.app */,
+				D6D69E351F597BE400CB1DE6 /* Watch.app */,
+				D6D69E411F597BE400CB1DE6 /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,11 +205,44 @@
 			path = Lockaway;
 			sourceTree = "<group>";
 		};
+		D6D69E361F597BE400CB1DE6 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				D6D69E371F597BE400CB1DE6 /* Interface.storyboard */,
+				D6D69E3A1F597BE400CB1DE6 /* Assets.xcassets */,
+				D6D69E3C1F597BE400CB1DE6 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		D6D69E451F597BE400CB1DE6 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6D69E481F597BE400CB1DE6 /* InterfaceController.swift */,
+				D6D69E4A1F597BE400CB1DE6 /* ExtensionDelegate.swift */,
+				D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */,
+				D6D69E4E1F597BE400CB1DE6 /* Assets.xcassets */,
+				D6D69E501F597BE400CB1DE6 /* Info.plist */,
+				D6D69E461F597BE400CB1DE6 /* Supporting Files */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		D6D69E461F597BE400CB1DE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6D69E471F597BE400CB1DE6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F58DF90BF32705F8181697BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				389F77474B740AE3B68E507F /* Pods-Lockaway.debug.xcconfig */,
 				55C85A8B4FCB57B92A55D080 /* Pods-Lockaway.release.xcconfig */,
+				76FCD0E53E332240839F79B1 /* Pods-Watch Extension.debug.xcconfig */,
+				96987384198F36F5299836FC /* Pods-Watch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -140,15 +260,55 @@
 				D69926D51F5452140056AE4C /* Resources */,
 				94DD9956077A53ACF7C70787 /* [CP] Embed Pods Frameworks */,
 				C44506B69516F4118D57F6B8 /* [CP] Copy Pods Resources */,
+				D6D69E5B1F597BE400CB1DE6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6D69E521F597BE400CB1DE6 /* PBXTargetDependency */,
 			);
 			name = Lockaway;
 			productName = Lockaway;
 			productReference = D69926D71F5452140056AE4C /* Lockaway.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D6D69E341F597BE400CB1DE6 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D69E581F597BE400CB1DE6 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				D6D69E331F597BE400CB1DE6 /* Resources */,
+				D6D69E571F597BE400CB1DE6 /* Embed App Extensions */,
+				18AED84AADE140E7172D0A33 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6D69E441F597BE400CB1DE6 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = D6D69E351F597BE400CB1DE6 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D6D69E401F597BE400CB1DE6 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D69E541F597BE400CB1DE6 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				1115CB72187ADAB342638717 /* [CP] Check Pods Manifest.lock */,
+				D6D69E3D1F597BE400CB1DE6 /* Sources */,
+				D6D69E3E1F597BE400CB1DE6 /* Frameworks */,
+				D6D69E3F1F597BE400CB1DE6 /* Resources */,
+				2D78FCF35086D40A6D97F900 /* [CP] Embed Pods Frameworks */,
+				2C0FDC1FAE728DA2AEF9BC8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = D6D69E411F597BE400CB1DE6 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -170,6 +330,16 @@
 							};
 						};
 					};
+					D6D69E341F597BE400CB1DE6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T8GF25SAZN;
+						ProvisioningStyle = Automatic;
+					};
+					D6D69E401F597BE400CB1DE6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T8GF25SAZN;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = D69926D21F5452140056AE4C /* Build configuration list for PBXProject "Lockaway" */;
@@ -186,6 +356,8 @@
 			projectRoot = "";
 			targets = (
 				D69926D61F5452140056AE4C /* Lockaway */,
+				D6D69E341F597BE400CB1DE6 /* Watch */,
+				D6D69E401F597BE400CB1DE6 /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -201,9 +373,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D69E331F597BE400CB1DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D69E3B1F597BE400CB1DE6 /* Assets.xcassets in Resources */,
+				D6D69E391F597BE400CB1DE6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D69E3F1F597BE400CB1DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D69E4F1F597BE400CB1DE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1115CB72187ADAB342638717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1EDD5F2E183544F5FFC540A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +429,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2C0FDC1FAE728DA2AEF9BC8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D78FCF35086D40A6D97F900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Gloss-watchOS/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/LockMessage-watchOS/LockMessage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LockMessage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		94DD9956077A53ACF7C70787 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,8 +471,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lockaway/Pods-Lockaway-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
-				"${BUILT_PRODUCTS_DIR}/LockMessage/LockMessage.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss-iOS/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/LockMessage-iOS/LockMessage.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -284,7 +526,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D69E3D1F597BE400CB1DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D69E4D1F597BE400CB1DE6 /* NotificationController.swift in Sources */,
+				D6D69E4B1F597BE400CB1DE6 /* ExtensionDelegate.swift in Sources */,
+				D6D69E491F597BE400CB1DE6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6D69E441F597BE400CB1DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D69E401F597BE400CB1DE6 /* Watch Extension */;
+			targetProxy = D6D69E431F597BE400CB1DE6 /* PBXContainerItemProxy */;
+		};
+		D6D69E521F597BE400CB1DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D69E341F597BE400CB1DE6 /* Watch */;
+			targetProxy = D6D69E511F597BE400CB1DE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D69926DE1F5452140056AE4C /* Main.storyboard */ = {
@@ -301,6 +566,14 @@
 				D69926E41F5452140056AE4C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6D69E371F597BE400CB1DE6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D69E381F597BE400CB1DE6 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,6 +702,76 @@
 			};
 			name = Release;
 		};
+		D6D69E551F597BE400CB1DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FCD0E53E332240839F79B1 /* Pods-Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D6D69E561F597BE400CB1DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96987384198F36F5299836FC /* Pods-Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		D6D69E591F597BE400CB1DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		D6D69E5A1F597BE400CB1DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +789,24 @@
 			buildConfigurations = (
 				D69926EA1F5452140056AE4C /* Debug */,
 				D69926EB1F5452140056AE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D69E541F597BE400CB1DE6 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D69E551F597BE400CB1DE6 /* Debug */,
+				D6D69E561F597BE400CB1DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D69E581F597BE400CB1DE6 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D69E591F597BE400CB1DE6 /* Debug */,
+				D6D69E5A1F597BE400CB1DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

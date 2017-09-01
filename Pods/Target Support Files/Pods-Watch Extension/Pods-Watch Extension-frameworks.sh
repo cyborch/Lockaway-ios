@@ -102,22 +102,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Gloss-iOS/Gloss.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/LockMessage-iOS/LockMessage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Gloss-watchOS/Gloss.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LockMessage-watchOS/LockMessage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Gloss-iOS/Gloss.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/LockMessage-iOS/LockMessage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Gloss-watchOS/Gloss.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LockMessage-watchOS/LockMessage.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
