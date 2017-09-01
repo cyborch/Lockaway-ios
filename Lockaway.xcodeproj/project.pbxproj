@@ -30,6 +30,7 @@
 		D6D69E721F59974400CB1DE6 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E711F59974400CB1DE6 /* Delegate.swift */; };
 		D6D69E741F5997AE00CB1DE6 /* WatchSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */; };
 		D6D69E771F599D5400CB1DE6 /* WatchSocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */; };
+		D6D69E791F59BC8300CB1DE6 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E781F59BC8300CB1DE6 /* NotificationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		D6D69E711F59974400CB1DE6 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionDelegate.swift; sourceTree = "<group>"; };
 		D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSocketDelegate.swift; sourceTree = "<group>"; };
+		D6D69E781F59BC8300CB1DE6 /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 				D61B90E21F5895C40094885A /* Lockscreen */,
 				D6324AE61F574D9300CD5171 /* Onboarding */,
 				D69926DA1F5452140056AE4C /* AppDelegate.swift */,
+				D6D69E781F59BC8300CB1DE6 /* NotificationDelegate.swift */,
 				D69926DE1F5452140056AE4C /* Main.storyboard */,
 				D69926E11F5452140056AE4C /* Assets.xcassets */,
 				D69926E31F5452140056AE4C /* LaunchScreen.storyboard */,
@@ -351,11 +354,21 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = T8GF25SAZN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 0;
+							};
+						};
 					};
 					D6D69E401F597BE400CB1DE6 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = T8GF25SAZN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -538,6 +551,7 @@
 				D69926ED1F54527F0056AE4C /* Discoverable.swift in Sources */,
 				D6D69E741F5997AE00CB1DE6 /* WatchSessionDelegate.swift in Sources */,
 				D6D69E771F599D5400CB1DE6 /* WatchSocketDelegate.swift in Sources */,
+				D6D69E791F59BC8300CB1DE6 /* NotificationDelegate.swift in Sources */,
 				D69926DB1F5452140056AE4C /* AppDelegate.swift in Sources */,
 				D61B90E91F5896930094885A /* SocketDelegate.swift in Sources */,
 				D69926FD1F54AF960056AE4C /* SocketID.swift in Sources */,

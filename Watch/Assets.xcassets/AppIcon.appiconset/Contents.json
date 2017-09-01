@@ -17,18 +17,21 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "Lockaway-58.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "Lockaway-87.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "watch",
+      "filename" : "Lockaway-80.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"

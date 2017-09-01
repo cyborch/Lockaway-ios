@@ -44,13 +44,17 @@ class Service: NSObject {
             socket.connect()
         }
     }
-    
-    @IBAction func sendLockMessage() {
-        let message = LockMessage()
+
+    func sendLockMessage(source: LockMessage.Source) {
+        let message = LockMessage(source: source)
         guard let data = message.toData() else {
             log.error("Could not serialize lock message")
             return
         }
         socket.write(data: data)
+    }
+    
+    @IBAction func sendLockMessage() {
+        sendLockMessage(source: .button)
     }
 }

@@ -31,8 +31,8 @@ class InterfaceController: WKInterfaceController {
 
     let manager = CMMotionActivityManager()
     
-    func sendLockMessage() {
-        let message = LockMessage()
+    func sendLockMessage(source: LockMessage.Source) {
+        let message = LockMessage(source: source)
         session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: nil)
     }
     
@@ -40,7 +40,7 @@ class InterfaceController: WKInterfaceController {
         manager.startActivityUpdates(to: .main,
                                      withHandler: { activity in
                                         if activity?.walking ?? false || activity?.running ?? false {
-                                            self.sendLockMessage()
+                                            self.sendLockMessage(source: .motion)
                                         }
         })
     }
@@ -54,16 +54,13 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func lock() {
-        let message = LockMessage()
-        session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: { error in
-            print("Error sending message from watch: \(error)")
-        })
+        sendLockMessage(source: .button)
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         session.activate()
-        // Configure interface objects here.
+        startUpdates()
     }
     
     override func willActivate() {

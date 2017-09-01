@@ -110,7 +110,7 @@ class LockController: UIViewController {
                                      withHandler: { activity in
                                         if activity?.walking ?? false || activity?.running ?? false {
                                             log.info("Walking detected - sending lock message")
-                                            self.service?.sendLockMessage()
+                                            self.service?.sendLockMessage(source: .motion)
                                         }
         })
     }
