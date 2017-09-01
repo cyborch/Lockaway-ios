@@ -1,26 +1,142 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Intro" id="BYZ-38-t0r" customClass="IntroController" customModule="Lockaway" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To lock your Mac directly from your iPhone or Apple Watch, launch the Lockaway desktop app to start pairing your devices." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bh-jg-20l">
+                                <rect key="frame" x="57" y="407.33333333333331" width="300" height="81.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2M5-vb-vIU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Connect" translatesAutoresizingMaskIntoConstraints="NO" id="qIM-F5-nEv">
+                                <rect key="frame" x="119" y="206" width="176" height="164"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck5-yV-guG">
+                                <rect key="frame" x="20" y="656" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9ie-hX-Zrn"/>
+                                </constraints>
+                                <state key="normal" title="Get the desktop app"/>
+                                <connections>
+                                    <action selector="getDesktopApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fV-8I-79z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qIM-F5-nEv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="ANn-3G-hwD"/>
+                            <constraint firstItem="7bh-jg-20l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="Gmv-5I-azo"/>
+                            <constraint firstItem="7bh-jg-20l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rey-HP-9Qb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ck5-yV-guG" secondAttribute="bottom" constant="20" id="b8Y-ja-aIZ"/>
+                            <constraint firstItem="ck5-yV-guG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qWF-H1-Fae"/>
+                            <constraint firstItem="ck5-yV-guG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sds-el-hOs"/>
+                            <constraint firstItem="qIM-F5-nEv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wyP-dN-ydD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="discoverable" destination="Rj5-aE-iU4" id="f0a-p0-iyW"/>
+                        <outlet property="introText" destination="7bh-jg-20l" id="GhE-GC-az1"/>
+                        <segue destination="pQo-gS-WNp" kind="presentation" identifier="Paired" modalTransitionStyle="crossDissolve" id="oS2-r7-klI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="Rj5-aE-iU4" customClass="Discoverable" customModule="Lockaway" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="BYZ-38-t0r" id="jft-Qs-Ntz"/>
+                    </connections>
+                </customObject>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="110.05434782608697"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="qQy-d5-nZY">
+            <objects>
+                <viewController restorationIdentifier="Lock" id="pQo-gS-WNp" customClass="LockController" customModule="Lockaway" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FZW-KB-wwa"/>
+                        <viewControllerLayoutGuide type="bottom" id="saV-Sk-af8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jh7-sF-JzB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unlocked" translatesAutoresizingMaskIntoConstraints="NO" id="EEQ-hg-e3i">
+                                <rect key="frame" x="137" y="218" width="140" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Mac is currently NOT locked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSG-5c-w7v">
+                                <rect key="frame" x="79.666666666666686" y="437.66666666666669" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-iK-iIl">
+                                <rect key="frame" x="20" y="656" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SDv-wK-dRh"/>
+                                </constraints>
+                                <state key="normal" title="Lock your Mac now"/>
+                                <connections>
+                                    <action selector="sendLockMessage" destination="Onu-TL-6bD" eventType="touchUpInside" id="sz8-t2-nfE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EEQ-hg-e3i" firstAttribute="centerX" secondItem="jh7-sF-JzB" secondAttribute="centerX" id="7zu-9f-ECv"/>
+                            <constraint firstItem="saV-Sk-af8" firstAttribute="top" secondItem="7qT-iK-iIl" secondAttribute="bottom" constant="20" id="Dbs-Gu-5F8"/>
+                            <constraint firstItem="7qT-iK-iIl" firstAttribute="leading" secondItem="jh7-sF-JzB" secondAttribute="leadingMargin" id="GRw-Zc-GDd"/>
+                            <constraint firstItem="fSG-5c-w7v" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="80" id="OmF-Ki-0DU"/>
+                            <constraint firstItem="7qT-iK-iIl" firstAttribute="trailing" secondItem="jh7-sF-JzB" secondAttribute="trailingMargin" id="QmZ-8E-anv"/>
+                            <constraint firstItem="fSG-5c-w7v" firstAttribute="centerX" secondItem="jh7-sF-JzB" secondAttribute="centerX" id="RRK-t0-QYY"/>
+                            <constraint firstItem="EEQ-hg-e3i" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="-80" id="dXe-hj-a4b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lock" destination="EEQ-hg-e3i" id="exl-bA-BT1"/>
+                        <outlet property="message" destination="fSG-5c-w7v" id="CZm-rL-S5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5D-26-h60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Bdk-qE-itU" customClass="SocketDelegate" customModule="Lockaway" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="pQo-gS-WNp" id="Nto-74-d1D"/>
+                    </connections>
+                </customObject>
+                <customObject id="Onu-TL-6bD" customClass="Service" customModule="Lockaway" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="pQo-gS-WNp" id="eJO-n1-LJx"/>
+                        <outlet property="delegate" destination="Bdk-qE-itU" id="tLj-TA-taF"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="108.42391304347827"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Connect" width="176" height="164"/>
+        <image name="Unlocked" width="140" height="140"/>
+    </resources>
 </document>

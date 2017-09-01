@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E35960C0DC9D9FB5EE87730AC5DD30F80A707429",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E35960C0DC9D9FB5EE87730AC5DD30F80A707429" : 9223372036854775807,
+    "ECB9C294C69C0A382F4D87E4E0310B5435B0CB94" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "01FE7688-F436-435E-BC6F-AC26EC7E1632",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E35960C0DC9D9FB5EE87730AC5DD30F80A707429" : "Lockaway-ios\/",
+    "ECB9C294C69C0A382F4D87E4E0310B5435B0CB94" : "Lockmessage\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lockaway",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lockaway.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cyborch\/Lockaway-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E35960C0DC9D9FB5EE87730AC5DD30F80A707429"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cyborch\/Lockmessage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ECB9C294C69C0A382F4D87E4E0310B5435B0CB94"
+    }
+  ]
+}
