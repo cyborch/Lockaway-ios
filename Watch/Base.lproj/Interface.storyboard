@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
@@ -21,6 +20,9 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="locked" destination="B7M-kh-H7l" id="L4C-4C-gH6"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="332"/>

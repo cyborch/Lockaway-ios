@@ -28,9 +28,13 @@ class Service: NSObject {
     
     let reach = Reachability()!
 
-    @IBOutlet var delegate: SocketDelegate? {
+    @IBOutlet var delegate: NSObject? {
         didSet {
-            socket.delegate = delegate
+            if let delegate = self.delegate as? WebSocketDelegate {
+                socket.delegate = delegate
+            } else {
+                log.error("Delegate \(String(describing: delegate)) is not a WebSocketDelegate")
+            }
             
             reach.whenReachable = { _ in
                 DispatchQueue.main.async {

@@ -10,16 +10,17 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 import LockMessage
-
-class Delegate: NSObject, WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
-}
+import Gloss
+import CoreMotion
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var locked: WKInterfaceImage? {
+        didSet {
+            delegate.locked = locked
+        }
+    }
+    
     private let delegate = Delegate()
     
     private var session: WCSession {
@@ -27,9 +28,36 @@ class InterfaceController: WKInterfaceController {
         session.delegate = self.delegate
         return session
     }
+
+    let manager = CMMotionActivityManager()
     
+    func sendLockMessage() {
+        let message = LockMessage()
+        session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: nil)
+    }
+    
+    func startUpdates() {
+        manager.startActivityUpdates(to: .main,
+                                     withHandler: { activity in
+                                        if activity?.walking ?? false || activity?.running ?? false {
+                                            self.sendLockMessage()
+                                        }
+        })
+    }
+    
+    func handler(reply: JSON) {
+        if let message = Message.from(json: reply) as? LockedStateMessage {
+            let image = message.state == .locked ? "Locked" : "Unlocked"
+            locked?.setImage(UIImage(named: image))
+            return
+        }
+    }
+
     @IBAction func lock() {
-        
+        let message = LockMessage()
+        session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: { error in
+            print("Error sending message from watch: \(error)")
+        })
     }
     
     override func awake(withContext context: Any?) {

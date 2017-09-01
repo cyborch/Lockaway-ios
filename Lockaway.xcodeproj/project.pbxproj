@@ -27,6 +27,9 @@
 		D6D69E4D1F597BE400CB1DE6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */; };
 		D6D69E4F1F597BE400CB1DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D69E4E1F597BE400CB1DE6 /* Assets.xcassets */; };
 		D6D69E531F597BE400CB1DE6 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6D69E351F597BE400CB1DE6 /* Watch.app */; };
+		D6D69E721F59974400CB1DE6 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E711F59974400CB1DE6 /* Delegate.swift */; };
+		D6D69E741F5997AE00CB1DE6 /* WatchSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */; };
+		D6D69E771F599D5400CB1DE6 /* WatchSocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D6D69E4E1F597BE400CB1DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D69E501F597BE400CB1DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D69E711F59974400CB1DE6 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionDelegate.swift; sourceTree = "<group>"; };
+		D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSocketDelegate.swift; sourceTree = "<group>"; };
 		F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +199,7 @@
 		D69926D91F5452140056AE4C /* Lockaway */ = {
 			isa = PBXGroup;
 			children = (
+				D6D69E751F599D2900CB1DE6 /* Watch */,
 				D61B90E51F5896410094885A /* Service */,
 				D61B90E21F5895C40094885A /* Lockscreen */,
 				D6324AE61F574D9300CD5171 /* Onboarding */,
@@ -218,6 +225,7 @@
 		D6D69E451F597BE400CB1DE6 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D6D69E711F59974400CB1DE6 /* Delegate.swift */,
 				D6D69E481F597BE400CB1DE6 /* InterfaceController.swift */,
 				D6D69E4A1F597BE400CB1DE6 /* ExtensionDelegate.swift */,
 				D6D69E4C1F597BE400CB1DE6 /* NotificationController.swift */,
@@ -234,6 +242,15 @@
 				D6D69E471F597BE400CB1DE6 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6D69E751F599D2900CB1DE6 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */,
+				D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */,
+			);
+			name = Watch;
 			sourceTree = "<group>";
 		};
 		F58DF90BF32705F8181697BA /* Pods */ = {
@@ -519,6 +536,8 @@
 				D61B90E41F5895D80094885A /* LockController.swift in Sources */,
 				D69926DD1F5452140056AE4C /* IntroController.swift in Sources */,
 				D69926ED1F54527F0056AE4C /* Discoverable.swift in Sources */,
+				D6D69E741F5997AE00CB1DE6 /* WatchSessionDelegate.swift in Sources */,
+				D6D69E771F599D5400CB1DE6 /* WatchSocketDelegate.swift in Sources */,
 				D69926DB1F5452140056AE4C /* AppDelegate.swift in Sources */,
 				D61B90E91F5896930094885A /* SocketDelegate.swift in Sources */,
 				D69926FD1F54AF960056AE4C /* SocketID.swift in Sources */,
@@ -530,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D69E721F59974400CB1DE6 /* Delegate.swift in Sources */,
 				D6D69E4D1F597BE400CB1DE6 /* NotificationController.swift in Sources */,
 				D6D69E4B1F597BE400CB1DE6 /* ExtensionDelegate.swift in Sources */,
 				D6D69E491F597BE400CB1DE6 /* InterfaceController.swift in Sources */,
