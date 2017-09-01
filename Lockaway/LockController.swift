@@ -9,13 +9,49 @@
 import UIKit
 import LockMessage
 import SVProgressHUD
+import CoreMotion
+
+fileprivate let WalkawayKey = "WalkAway"
 
 class LockController: UIViewController {
     var isLoading = false
     
+    @IBOutlet var service: Service?
+    var auto: Bool {
+        get {
+            let ud = UserDefaults.standard
+            return ud.bool(forKey: WalkawayKey)
+        }
+        set(auto) {
+            let ud = UserDefaults.standard
+            ud.set(auto, forKey: WalkawayKey)
+            ud.synchronize()
+        }
+    }
+    
+    let manager = CMMotionActivityManager()
+    
     @IBOutlet var lock: UIImageView?
     @IBOutlet var message: UILabel?
-
+    @IBOutlet var walk: UILabel? {
+        didSet {
+            if auto {
+                walk?.text = "auto locking when you walk away"
+            } else {
+                walk?.text = "manual locking"
+            }
+        }
+    }
+    @IBOutlet var toggle: UIButton? {
+        didSet {
+            if auto {
+                toggle?.isSelected = true
+            } else {
+                toggle?.isSelected = false
+            }
+        }
+    }
+    
     func showLoading() {
         isLoading = true
         guard isViewLoaded else { return }
@@ -28,6 +64,9 @@ class LockController: UIViewController {
     override func viewDidLoad() {
         if isLoading {
             showLoading()
+        }
+        if auto {
+            startUpdates()
         }
     }
     
@@ -64,6 +103,28 @@ class LockController: UIViewController {
                                         alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func startUpdates() {
+        manager.startActivityUpdates(to: .main,
+                                     withHandler: { activity in
+                                        if activity?.walking ?? false || activity?.running ?? false {
+                                            log.info("Walking detected - sending lock message")
+                                            self.service?.sendLockMessage()
+                                        }
+        })
+    }
+    
+    @IBAction func toggleWalkaway(_ button: UIButton) {
+        button.isSelected = !button.isSelected
+        if button.isSelected {
+            walk?.text = "auto locking when you walk away"
+            startUpdates()
+        } else {
+            walk?.text = "manual locking"
+            manager.stopActivityUpdates()
+        }
+        auto = button.isSelected
     }
     
 }
