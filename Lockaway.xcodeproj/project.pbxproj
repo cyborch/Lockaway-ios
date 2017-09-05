@@ -109,6 +109,7 @@
 		D6D69E731F5997AE00CB1DE6 /* WatchSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionDelegate.swift; sourceTree = "<group>"; };
 		D6D69E761F599D5400CB1DE6 /* WatchSocketDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSocketDelegate.swift; sourceTree = "<group>"; };
 		D6D69E781F59BC8300CB1DE6 /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		D6FEFFDF1F59D1B100FEB42C /* Lockaway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lockaway.entitlements; sourceTree = "<group>"; };
 		F050F80F8B11D991F0C6FA84 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,6 +211,7 @@
 				D69926DE1F5452140056AE4C /* Main.storyboard */,
 				D69926E11F5452140056AE4C /* Assets.xcassets */,
 				D69926E31F5452140056AE4C /* LaunchScreen.storyboard */,
+				D6FEFFDF1F59D1B100FEB42C /* Lockaway.entitlements */,
 				D69926E61F5452140056AE4C /* Info.plist */,
 			);
 			path = Lockaway;
@@ -346,7 +348,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
 							};
 						};
 					};
@@ -713,10 +718,11 @@
 			baseConfigurationReference = 389F77474B740AE3B68E507F /* Pods-Lockaway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lockaway/Lockaway.entitlements;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				INFOPLIST_FILE = Lockaway/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -727,10 +733,11 @@
 			baseConfigurationReference = 55C85A8B4FCB57B92A55D080 /* Pods-Lockaway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Lockaway/Lockaway.entitlements;
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				INFOPLIST_FILE = Lockaway/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -744,7 +751,7 @@
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -762,7 +769,7 @@
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -779,7 +786,7 @@
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -796,7 +803,7 @@
 				DEVELOPMENT_TEAM = T8GF25SAZN;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyborch.Lockaway.ios.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

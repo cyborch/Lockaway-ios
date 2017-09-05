@@ -10,8 +10,9 @@ import UIKit
 import LockMessage
 import SVProgressHUD
 import CoreMotion
+import UserNotifications
 
-fileprivate let WalkawayKey = "WalkAway"
+let WalkawayKey = "WalkAway"
 
 class LockController: UIViewController {
     var isLoading = false
@@ -29,13 +30,17 @@ class LockController: UIViewController {
         }
     }
     
-    let manager = CMMotionActivityManager()
-    
+    let pedometer = CMPedometer()
+    var queryTime = Date()
+    var stepCount = 0
+
+    let notificationDelegate = NotificationDelegate()
+
     @IBOutlet var lock: UIImageView?
     @IBOutlet var message: UILabel?
     @IBOutlet var walk: UILabel? {
         didSet {
-            if auto {
+            if auto && CMPedometer.isStepCountingAvailable() {
                 walk?.text = "auto locking when you walk away"
             } else {
                 walk?.text = "manual locking"
@@ -44,10 +49,15 @@ class LockController: UIViewController {
     }
     @IBOutlet var toggle: UIButton? {
         didSet {
-            if auto {
-                toggle?.isSelected = true
+            if !CMPedometer.isStepCountingAvailable() {
+                toggle?.isEnabled = false
+                toggle?.tintColor = .gray
             } else {
-                toggle?.isSelected = false
+                if auto {
+                    toggle?.isSelected = true
+                } else {
+                    toggle?.isSelected = false
+                }
             }
         }
     }
@@ -80,6 +90,9 @@ class LockController: UIViewController {
         case .unlocked:
             lock?.image = UIImage(named: "Unlocked")
             self.message?.text = "Your Mac is current NOT locked"
+            if auto {
+                queryStepCount()
+            }
         }
     }
     
@@ -104,27 +117,45 @@ class LockController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+
+    func registerNotifications() {
+        let ud = UserDefaults.standard
+        guard ud.bool(forKey: WalkawayKey) else { return }
+        let center = UNUserNotificationCenter.current()
+        center.delegate = notificationDelegate
+        center.requestAuthorization(options: [.alert]) { (granted, error) in
+            guard error == nil else { log.error("Error Requesting notifications: \(error!)") ; return }
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+    }
     
-    func startUpdates() {
-        manager.startActivityUpdates(to: .main,
-                                     withHandler: { activity in
-                                        if activity?.walking ?? false || activity?.running ?? false {
-                                            log.info("Walking detected - sending lock message")
-                                            self.service?.sendLockMessage(source: .motion)
-                                        }
+    func queryStepCount() {
+        pedometer.queryPedometerData(from: queryTime, to: Date(), withHandler: { (data, error) in
+            guard error == nil else { log.error("Error getting step count: \(error!)") ; return }
+            guard let stepCount = data?.numberOfSteps.intValue else { return }
+            if stepCount > self.stepCount {
+                self.service?.sendLockMessage()
+            }
+            self.stepCount = stepCount
+            self.queryTime = Date()
         })
+    }
+
+    func startUpdates() {
+        registerNotifications()
+        queryStepCount()
     }
     
     @IBAction func toggleWalkaway(_ button: UIButton) {
         button.isSelected = !button.isSelected
+        auto = button.isSelected
         if button.isSelected {
             walk?.text = "auto locking when you walk away"
             startUpdates()
         } else {
             walk?.text = "manual locking"
-            manager.stopActivityUpdates()
+            //manager.stopMagnetometerUpdates()
         }
-        auto = button.isSelected
     }
     
 }
