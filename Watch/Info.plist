@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.cyborch.Lockaway</string>
+	<string>com.cyborch.Lockaway.ios</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
