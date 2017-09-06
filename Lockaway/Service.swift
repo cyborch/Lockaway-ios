@@ -64,34 +64,4 @@ class Service: NSObject {
     @IBAction func sendLockMessage() {
         sendLockMessage(source: .button)
     }
-    
-    static func register(deviceToken: Data) {
-        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        let session = URLSession(configuration: URLSessionConfiguration.ephemeral)
-        var request = URLRequest(url: URL(string: "http\(secure)://\(host)/device")!,
-                                 cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
-                                 timeoutInterval: 10.0)
-        request.httpMethod = "POST"
-        let post = "pipe_identifier=/pipe/\(SocketID.string)&device_token=\(deviceTokenString)"
-        guard let postData = post.data(using: .ascii) else { return }
-        request.allHTTPHeaderFields = [
-            "Authorization": "Token v33gF7yxN6AUka1GjHhC15029130127920E2ZBAONga0PvMTquVkY",
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Content-Length": "\(postData.count)"
-        ]
-        request.httpBody = postData
-        let task = session.dataTask(with: request) { (data, response, error) in
-            guard error == nil else {
-                log.error("Error registering device token: \(error!)")
-                return
-            }
-            guard let statusCode = (response as? HTTPURLResponse)?.statusCode else { return }
-            guard statusCode < 300 else {
-                log.error("Unexpected server response: \((response as! HTTPURLResponse).statusCode)")
-                return
-            }
-            log.debug("Uploaded device token")
-        }
-        task.resume()
-    }
 }

@@ -113,40 +113,17 @@
                                     <action selector="close" destination="pQo-gS-WNp" eventType="touchUpInside" id="r8s-av-5By"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-h4-QUw">
-                                <rect key="frame" x="329" y="-6" width="120" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="6Kg-za-I15"/>
-                                    <constraint firstAttribute="height" constant="100" id="w48-Ai-GrD"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Walk"/>
-                                <state key="selected" image="Walk-Filled"/>
-                                <connections>
-                                    <action selector="toggleWalkaway:" destination="pQo-gS-WNp" eventType="touchUpInside" id="76z-gq-EJM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="auto locking when you walk away" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-XG-oIH">
-                                <rect key="frame" x="159.66666666666663" y="-6" width="200.33333333333337" height="100"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eKx-h4-QUw" firstAttribute="top" secondItem="0ct-XG-oIH" secondAttribute="top" id="0IH-zi-MgP"/>
-                            <constraint firstItem="eKx-h4-QUw" firstAttribute="bottom" secondItem="0ct-XG-oIH" secondAttribute="bottom" id="4Wa-cn-lSO"/>
                             <constraint firstItem="EEQ-hg-e3i" firstAttribute="centerX" secondItem="jh7-sF-JzB" secondAttribute="centerX" id="7zu-9f-ECv"/>
                             <constraint firstItem="saV-Sk-af8" firstAttribute="top" secondItem="7qT-iK-iIl" secondAttribute="bottom" constant="20" id="Dbs-Gu-5F8"/>
-                            <constraint firstItem="eKx-h4-QUw" firstAttribute="trailing" secondItem="jh7-sF-JzB" secondAttribute="trailingMargin" constant="55" id="Frh-2P-PJa"/>
                             <constraint firstItem="7qT-iK-iIl" firstAttribute="leading" secondItem="jh7-sF-JzB" secondAttribute="leadingMargin" id="GRw-Zc-GDd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0ct-XG-oIH" secondAttribute="trailing" constant="34" id="NfU-zD-mKQ"/>
                             <constraint firstItem="fSG-5c-w7v" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="80" id="OmF-Ki-0DU"/>
                             <constraint firstItem="7qT-iK-iIl" firstAttribute="trailing" secondItem="jh7-sF-JzB" secondAttribute="trailingMargin" id="QmZ-8E-anv"/>
                             <constraint firstItem="fSG-5c-w7v" firstAttribute="centerX" secondItem="jh7-sF-JzB" secondAttribute="centerX" id="RRK-t0-QYY"/>
                             <constraint firstItem="Ihs-Zw-GrD" firstAttribute="top" secondItem="FZW-KB-wwa" secondAttribute="bottom" constant="-10" id="dCK-ez-57R"/>
                             <constraint firstItem="EEQ-hg-e3i" firstAttribute="centerY" secondItem="jh7-sF-JzB" secondAttribute="centerY" constant="-80" id="dXe-hj-a4b"/>
-                            <constraint firstItem="eKx-h4-QUw" firstAttribute="top" secondItem="FZW-KB-wwa" secondAttribute="bottom" constant="-26" id="hJp-UX-5u3"/>
                             <constraint firstItem="Ihs-Zw-GrD" firstAttribute="leading" secondItem="jh7-sF-JzB" secondAttribute="leadingMargin" constant="-10" id="mVQ-wa-JiK"/>
                         </constraints>
                     </view>
@@ -154,8 +131,6 @@
                         <outlet property="lock" destination="EEQ-hg-e3i" id="exl-bA-BT1"/>
                         <outlet property="message" destination="fSG-5c-w7v" id="CZm-rL-S5h"/>
                         <outlet property="service" destination="Onu-TL-6bD" id="8ZI-rp-48y"/>
-                        <outlet property="toggle" destination="eKx-h4-QUw" id="0FW-3q-jqN"/>
-                        <outlet property="walk" destination="0ct-XG-oIH" id="mcy-Ug-xuS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5D-26-h60" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -178,7 +153,5 @@
         <image name="Connect" width="176" height="164"/>
         <image name="Link" width="30" height="30"/>
         <image name="Unlocked" width="140" height="140"/>
-        <image name="Walk" width="30" height="30"/>
-        <image name="Walk-Filled" width="30" height="30"/>
     </resources>
 </document>
