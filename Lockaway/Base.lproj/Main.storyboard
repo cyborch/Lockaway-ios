@@ -113,6 +113,13 @@
                                     <action selector="close" destination="pQo-gS-WNp" eventType="touchUpInside" id="r8s-av-5By"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efj-J6-VZo">
+                                <rect key="frame" x="137" y="218" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sendLockMessage" destination="Onu-TL-6bD" eventType="touchUpInside" id="Hzg-Cn-y7f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
