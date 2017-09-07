@@ -11,7 +11,6 @@ import Foundation
 import WatchConnectivity
 import LockMessage
 import Gloss
-import CoreMotion
 
 class InterfaceController: WKInterfaceController {
 
@@ -29,20 +28,9 @@ class InterfaceController: WKInterfaceController {
         return session
     }
 
-    let manager = CMMotionActivityManager()
-    
     func sendLockMessage(source: LockMessage.Source) {
         let message = LockMessage(source: source)
         session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: nil)
-    }
-    
-    func startUpdates() {
-        manager.startActivityUpdates(to: .main,
-                                     withHandler: { activity in
-                                        if activity?.walking ?? false || activity?.running ?? false {
-                                            self.sendLockMessage(source: .motion)
-                                        }
-        })
     }
     
     func handler(reply: JSON) {
@@ -60,7 +48,6 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         session.activate()
-        startUpdates()
     }
     
     override func willActivate() {
