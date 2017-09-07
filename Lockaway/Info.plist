@@ -24,8 +24,6 @@
 	<true/>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Your phone will advertise its proximity in order to enable automatically locking your computer when you leave.</string>
-	<key>NSMotionUsageDescription</key>
-	<string>Step detection is used to automatically lock your mac when you walk away.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

@@ -9,8 +9,7 @@
 import UIKit
 import LockMessage
 import SVProgressHUD
-
-let WalkawayKey = "WalkAway"
+import UserNotifications
 
 class LockController: UIViewController {
     var isLoading = false
@@ -19,6 +18,8 @@ class LockController: UIViewController {
     
     @IBOutlet var lock: UIImageView?
     @IBOutlet var message: UILabel?
+    
+    private let notificationDelegate = NotificationDelegate()
     
     func showLoading() {
         isLoading = true
@@ -45,6 +46,21 @@ class LockController: UIViewController {
         case .unlocked:
             lock?.image = UIImage(named: "Unlocked")
             self.message?.text = "Your Mac is current NOT locked"
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) { 
+            self.registerNotifications()
+        }
+    }
+    
+    func registerNotifications() {
+        let center = UNUserNotificationCenter.current()
+        center.delegate = notificationDelegate
+        center.requestAuthorization(options: [.alert]) { (granted, error) in
+            guard error == nil else { log.error("Error Requesting notifications: \(error!)") ; return }
+            UIApplication.shared.registerForRemoteNotifications()
         }
     }
     
