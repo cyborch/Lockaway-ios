@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "Lockaway-40.png",
+      "filename" : "Lockaway-iphone-40.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "Lockaway-60.png",
+      "filename" : "Lockaway-iphone-60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Lockaway-58.png",
+      "filename" : "Lockaway-iphone-59.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Lockaway-87.png",
+      "filename" : "Lockaway-iphone-87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Lockaway-80.png",
+      "filename" : "Lockaway-iphone-81.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Lockaway-120.png",
+      "filename" : "Lockaway-iphone-120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Lockaway-121.png",
+      "filename" : "Lockaway-iphone-121.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Lockaway-180.png",
+      "filename" : "Lockaway-iphone-180.png",
       "scale" : "3x"
     },
     {
@@ -57,49 +57,49 @@
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "Lockaway-41.png",
+      "filename" : "Lockaway-iphone-42.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Lockaway-29.png",
+      "filename" : "Lockaway-iphone-29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Lockaway-59.png",
+      "filename" : "Lockaway-iphone-58.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Lockaway-42.png",
+      "filename" : "Lockaway-iphone-41.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Lockaway-81.png",
+      "filename" : "Lockaway-iphone-80.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Lockaway-76.png",
+      "filename" : "Lockaway-iphone-76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "Lockaway-76@2x.png",
+      "filename" : "Lockaway-iphone-152.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "Lockaway-83.5@2x.png",
+      "filename" : "Lockaway-iphone-167.png",
       "scale" : "2x"
     }
   ],
