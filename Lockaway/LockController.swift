@@ -24,13 +24,15 @@ class LockController: UIViewController {
     func showLoading() {
         isLoading = true
         guard isViewLoaded else { return }
-        SVProgressHUD.setBackgroundColor(UIColor.clear)
-        SVProgressHUD.show()
+        if !SVProgressHUD.isVisible() {
+            SVProgressHUD.show()
+        }
         lock?.image = nil
         message?.text = "Getting locked state for your Mac"
     }
     
     override func viewDidLoad() {
+        SVProgressHUD.setBackgroundColor(.clear)
         if isLoading {
             showLoading()
         }
