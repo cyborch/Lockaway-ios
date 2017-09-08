@@ -38,11 +38,6 @@ class SocketDelegate: NSObject, WebSocketDelegate {
             return
         }
         
-        if let message = Message.from(data: data) as? ResponseMessage {
-            log.debug("Got response message")
-            notify(response: message)
-        }
-        
         if let hello = Message.from(data: data) as? HelloMessage {
             log.info("Got hello from a desktop")
             if hello.role == .desktop {
@@ -51,39 +46,22 @@ class SocketDelegate: NSObject, WebSocketDelegate {
             return
         }
         
+        if let offline = Message.from(data: data) as? OfflineMessage {
+            controller?.update(message: offline)
+            return
+        }
+
         log.warning("Unhandled data: \(String(data: data, encoding: .ascii) ?? "nil")")
     }
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
         log.debug("websocketDidReceiveMessage")
+
+    
+        log.warning("Unhandled message: \(text)")
     }
 
     // MARK: - Handlers
-    
-    func notify(response: ResponseMessage) {
-        guard let original = Message.from(json: response.respondingTo) as? LockMessage else { return }
-        if original.source == .motion {
-            // Create Notification Content
-            let notificationContent = UNMutableNotificationContent()
-            
-            // Configure Notification Content
-            notificationContent.title = "Locked"
-            
-            //notificationContent.subtitle = ""
-            notificationContent.body = "Your mac was automatically locked when you walked away."
-
-            let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
-            
-            let notificationRequest = UNNotificationRequest(identifier: "LockNotification", content: notificationContent, trigger: notificationTrigger)
-            
-            // Add Request to User Notification Center
-            UNUserNotificationCenter.current().add(notificationRequest) { (error) in
-                if let error = error {
-                    log.error("Unable to add notification request (\(error), \(error.localizedDescription))")
-                }
-            }
-        }
-    }
     
     func sendStateRequest(socket: WebSocket) {
         let message = QueryMessage(query: .isLocked)

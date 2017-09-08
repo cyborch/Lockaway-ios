@@ -7,114 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0513CFA605DC21F77953438F11B025BE /* Gloss+ToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403FECB8790286C1EC83F2E990C50DB /* Gloss+ToData.swift */; };
-		068A441BD431912342A879A4E3987851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		089F5637A33489C214BF18AA2AAA14B8 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0682F3A28A017B1292A23C03351CC /* ExtensionDictionary.swift */; };
-		08E9FB6E892CAE831D4D5848037EC56C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE2D84B0B94B4659B7E73BA3404528 /* Message.swift */; };
 		0BB2344B8C535FD4F5D20CF8F3CF673A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		0C54AC5F3FCCBE79348541775C3CBD8A /* ObjcExceptionBridging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 645B15582AF7C2924BE6830B1669A8F1 /* ObjcExceptionBridging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CEF6855B29E5E873E3617F60201885C /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B396D7B2B4DC73ACDFCF3F51528C5FC9 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DA7CB7B22064F1C81CA01541CF48620 /* LockedStateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E426D5BA548CAE606DE66765C3B7B /* LockedStateMessage.swift */; };
 		0FCAD07C890C7B4F1E7F0A8786612BE8 /* AppleSystemLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9651913E6FD7D70DCFD23315D5628BFB /* AppleSystemLogDestination.swift */; };
 		11416AC244BB56EF744CE0E71B2EF814 /* Gloss-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA084172C19E357E876156CE2253E562 /* Gloss-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		130E8BE4B8709F4DDB30965E61524B4F /* PrePostFixLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759A2D22E9F6D402B3AFDA360A2F17A /* PrePostFixLogFormatter.swift */; };
-		151D63F2CFE5DA70233BCF216522E73F /* LockMessage-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB52A7960C1523365D5072EF903BFF /* LockMessage-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		152EAFB54886980F2AE9CAD47FFAAE8A /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427313AC8FA9FC1ADC9F5259786FB077 /* Decoder.swift */; };
 		16C373C687152BD46C2D62727D79828E /* TestDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA659168C77BDA272CE0568BB74769C /* TestDestination.swift */; };
 		19130636D09DBA57BB355E913B7FC51D /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0092CBA686EE9B6553962EEAC1C4A7 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21C0C72F0F14031A72A2C22BF3860197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		26FA17A941EE4B582551BB67F54B012B /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EA9CA3C2A24B58257536FBF31FAF43 /* ExtensionArray.swift */; };
 		2952B81A42CC514CCA7768D904ECED9A /* ANSIColorLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE292E1DB42B103ED0FD98C09B63959 /* ANSIColorLogFormatter.swift */; };
+		2DCE1F6D5601309982D9EBAB7C630619 /* Gloss+ToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B73792B865D130A3E3A5779B2C518A /* Gloss+ToData.swift */; };
 		2F7508D715BB5C709C5CB89C40B01272 /* Pods-Lockaway-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6539C6C6E0D418C73B7F32EE5A267 /* Pods-Lockaway-dummy.m */; };
 		3005AC2A43A8413E2359E88A48F990EF /* BaseQueuedDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0643326D1BF9754BD0964457EE05700D /* BaseQueuedDestination.swift */; };
-		35774408C640292BB03DAB6C2E3E70EA /* LockedStateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33708D28341F8041B7E1619B3FCDE5C4 /* LockedStateMessage.swift */; };
+		312237D639C55E24C131131EFFC36CE3 /* OfflineMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91070259B94473AB1FB28F176565D41E /* OfflineMessage.swift */; };
+		322AF0D34CEFC032641A137F6C0346F5 /* MergeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08435813A8D2839F1AA62EA41F38DA68 /* MergeJson.swift */; };
+		35AD1CA3F7BF620961FBE625238D4C94 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC26FD20ED8E333C6A8D0F043A7AD0 /* ResponseMessage.swift */; };
 		360ADF8EFFDC2C52F80864342D1E1C12 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73687E0C5C72191FED7E1CB4EF78A1 /* Encoder.swift */; };
+		3673C3F7A6E9C89A94E3AAEE355CAA88 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AD80D610FCD69FC356808619FA517 /* Gloss.framework */; };
 		3AC3DA6D99A38D7FB004F446C0362016 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640EC343D8B5B37B469761A5045F1F7E /* ConsoleDestination.swift */; };
-		3AEE0F5D0AF11B553DA7D2B375068C93 /* Phonelock.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E33E6E1EEB2C113C4E8C4D715B297F5 /* Phonelock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B79DF34C8FA315F26525F076EEE7D7E /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0682F3A28A017B1292A23C03351CC /* ExtensionDictionary.swift */; };
 		3C393AE01A9A5121344D4B44CB3EA2DE /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605A26D570C79B6C94F22282BF19BA9 /* Compression.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3E10FC4AA23478C064DC0EDA79C46596 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1802EEEFE47E3B30761FE82CB46EE5 /* HelperFunctions.swift */; };
 		3F4FE4BFEBCCACE70C229F4E6772DF4D /* DevFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81727D862094AD2C3C0890800C90E12B /* DevFilter.swift */; };
 		43DEEE95F05E4C61D5A1110E7B710566 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F5B662730C27D16350749553E0AAE5 /* SVProgressHUD-dummy.m */; };
 		4A7FE982B3066F6CD82D9934566C0908 /* UserInfoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D640F40B683B9A4FC866F7037B3A36 /* UserInfoFilter.swift */; };
+		4BFA446CC63479CCBD8439CFE65302AF /* Watchlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F54ECF24953B5A70F9744A393DA0B6B /* Watchlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D8519CDAD9AAC42E53E701D12B9321F /* ExtensionDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE229BFD54F5709E9CF09F9D7978B70 /* ExtensionDecodable.swift */; };
 		4FF439A55B868599C930F1C1ED771739 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 999F5C2AF540C031052ECAF16FF6EF82 /* SVIndefiniteAnimatedView.m */; };
-		50B4BCCB24E2FB01B9F378B4131C5A21 /* QueryMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B05747509904B465B125EA6C14952 /* QueryMessage.swift */; };
 		5738A3B2C1AB7E698284B9DF58679EB7 /* Pods-Lockaway-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B41FF374BF20AEFBFC171FEC1C680BC /* Pods-Lockaway-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58A4814BC1F2C3249750F9D3E05B2894 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699E610A78FEE9ED2BBC2F66D048AC9 /* ResponseMessage.swift */; };
 		59790F8DF3BBC07107D678464E575768 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D3C2A83D9CF3C825AE1ECF40CC875F /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B54408C54A5D78412E770BF2DEA1BAA /* LockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51DF1F63DB8184700795570D7B674E /* LockMessage.swift */; };
 		5E632DDFA44C09C21110169843F23FBC /* ObjcExceptionBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = D305CF1BCD0850136AF6C4088CBB5BB4 /* ObjcExceptionBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6023AC4C3D708B77E70A26BA2D5FFF62 /* LockedStateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E426D5BA548CAE606DE66765C3B7B /* LockedStateMessage.swift */; };
 		60628580D0800D34F4A8CE2BF0D5F001 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73687E0C5C72191FED7E1CB4EF78A1 /* Encoder.swift */; };
 		64CEF77F0F27CABB7753DC59EEE3EEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		6547DF400F96058DDACCBE8D4D8A061C /* Base64LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE0906303AB8F1A205E0F77A21D7EE /* Base64LogFormatter.swift */; };
+		65911FFE6DF58187E4DA9AAE4B7158EB /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AD80D610FCD69FC356808619FA517 /* Gloss.framework */; };
 		65CB40ECF164E81D204F229EA031F098 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5A9A38BA76BD778A645F919AD12A5 /* SVRadialGradientLayer.m */; };
 		65F218632E9C34D1FF99498A2124D54B /* LogFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB47685F71AB3ED4DC33661E7BC804 /* LogFormatterProtocol.swift */; };
-		71D96D945598837AEC34FA0D3B5C0916 /* LockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CACF845463EC73D397F74ED672E242 /* LockMessage.swift */; };
+		6BEE80C27086C82277EEFB572F6295AC /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC5E4D128AF4E46180EDBB8C80CACD /* HelloMessage.swift */; };
+		74458CD6FB12549D8D62052C3E8256A6 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35C0C13D1B54CC3A7FB2C18C264B86 /* Init.swift */; };
 		74AF879A3786D44FDE6A39D0383D7E2C /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C3B57F468C5209C97F7A4C76D8137 /* FilterProtocol.swift */; };
-		7C3333BEFD1B7A1DD946CE5F8959F4FE /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7FF80096ED0667F0B6F197DF54C4F /* HelloMessage.swift */; };
 		806604ED0C436BA3860852CC044F1EA1 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63442C1AB581BB4E2A4A20C50B834E3D /* Gloss.swift */; };
 		81A50A414006AC070B899A7257CF9E70 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F70BAA6F4EA3B9DC0A69E467F69D10B1 /* SVProgressHUD.m */; };
-		855C840112DACC8534689E10CE0DAD2B /* LockMessage-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A407E825B9DAD9C77DCF62720C6DAFCF /* LockMessage-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		858525BFC50E951A7654E9D5DA15D16B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C463318D106471E810D5BE40A0AE7 /* Reachability.swift */; };
-		891E3775153E4A65AA291A29FBD23C87 /* Gloss+ToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403FECB8790286C1EC83F2E990C50DB /* Gloss+ToData.swift */; };
+		865DD47E954F8E632A99DB9C5189925A /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC26FD20ED8E333C6A8D0F043A7AD0 /* ResponseMessage.swift */; };
 		89B6A457EC2975E96437D34C59B85691 /* XCGLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 131F0B0432D401F1CD6543E7B329F033 /* XCGLogger-dummy.m */; };
 		8A677EECAAE8E2E205FB09D4E7384E7A /* AutoRotatingFileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8A02AE35E6A51C6A0DBADE32AB3FF2 /* AutoRotatingFileDestination.swift */; };
 		8B0858B7DA0DD9DA7190CF6E43F492C1 /* URL+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE4ED65FB58CE7CA74CF966A3E4031 /* URL+XCGAdditions.swift */; };
-		8FAAA2241AD770F6C9318F3CD6E75816 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AD80D610FCD69FC356808619FA517 /* Gloss.framework */; };
-		90B490A6DB77995E8FE34ACBEFEF098E /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7FF80096ED0667F0B6F197DF54C4F /* HelloMessage.swift */; };
 		90B52B6478795F6EDF39AB671DEA5700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACC0F39C0990676AFFC7BAE525771E1 /* Foundation.framework */; };
 		91B57402A405E0CD490EFCAE4F16BA94 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C8CC79C44FC813218077D6E0EAD3C0 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		927C1388BBE9C7B3501DAA827B3EB356 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFA948ED592CAD2F64B7EBB58BF1C8 /* Starscream-dummy.m */; };
 		964FFF35CE46E000EA5BDB2A50721B6E /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2F667B6658696ACCF42A98F66640A /* SVProgressAnimatedView.m */; };
+		9700BB5E269F1BA0F7DC0B87319CD3FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		9A8A85CA6FAFE9CBD636582A5EB43546 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EA9CA3C2A24B58257536FBF31FAF43 /* ExtensionArray.swift */; };
 		9B1DABE4D244D8BE7FE9E14953CCDDC8 /* Gloss-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDA11E759E5F2BE6252387A3C1A9025 /* Gloss-iOS-dummy.m */; };
 		9B7E5DBA77F4E88CEDB815DC6F80BAE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C462A3E96C3DD9E669ECA68957CAE5D /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D7BA5BC5341793684EECB1FAE9CF52F /* ObjcExceptionBridging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9C48FD62FF8E36798BA8074BC9CD6F /* ObjcExceptionBridging-dummy.m */; };
 		9E81AD65C3A47A0922F68602A368C045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACC0F39C0990676AFFC7BAE525771E1 /* Foundation.framework */; };
-		A1F35FB0B77E128FB36CF8FE772E8858 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE2D84B0B94B4659B7E73BA3404528 /* Message.swift */; };
+		A1AB309F21A603E329C6F7F90BEF0726 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF394C92159F46121D69113FD4EC8BE /* Message.swift */; };
 		A320567AA5A3DBE5940D00ECDB30DF72 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EDBC923BC436267509058687F7857F /* BaseDestination.swift */; };
-		A64663226F6ED6F15A33E37578B0AAAC /* LockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CACF845463EC73D397F74ED672E242 /* LockMessage.swift */; };
 		A8F4A4E5A6E6DDD7BC012C63AC204284 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F87F524212B45E1CA4F079A9100DD2D3 /* SVProgressHUD.bundle */; };
 		A9035375A7E670266FE9086CDCC00F8C /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF96A1162F7D4A73DD15A02E9454CC3E /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CA32203FF742A46B34BEA8B3AC53D0 /* DestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB05A82D41E309373E12A7CC412967A /* DestinationProtocol.swift */; };
 		AB36FC87D6CFE01196E3D8E115334FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		ABCB5A199DAC30792CB1F88BD754AAEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65DFE1DA1007EB6C68399C3A818C07C /* QuartzCore.framework */; };
-		ABDBC18300FB05E82CE67A3B64BA94F9 /* LockedStateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33708D28341F8041B7E1619B3FCDE5C4 /* LockedStateMessage.swift */; };
 		AC30C34053C433D323B3EC6E32747027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		AC55E9EF7E1F05E3F789E675E3874805 /* ExtensionDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE229BFD54F5709E9CF09F9D7978B70 /* ExtensionDecodable.swift */; };
+		AD5AC98517D36597A596E94322E76F68 /* HelloMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC5E4D128AF4E46180EDBB8C80CACD /* HelloMessage.swift */; };
 		B6495CFB7414A9CC51F1C33650368272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		B806EEC24C140A73AAC110368F770175 /* TagFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA6C088C4EDE323ED48455BF552A98 /* TagFilter.swift */; };
-		C29FE22857DA09501422977FDD7A9B60 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB28BBD542B6E89A967065DBF65FC0C /* Init.swift */; };
+		B84058390D309766F060CB3BFECA2177 /* LockMessage-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A30F2C2989A8644A464CA936F94753 /* LockMessage-watchOS-dummy.m */; };
+		BA4D9B44C2EA311DDAE46B0B1383A5A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACC0F39C0990676AFFC7BAE525771E1 /* Foundation.framework */; };
+		C1A66E1FD126D1C38E561B9DEBCB62A1 /* OfflineMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91070259B94473AB1FB28F176565D41E /* OfflineMessage.swift */; };
 		C2A040BBE67333A0A01659111CF259E4 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BD4EAB53CA87EED0402A1588680240 /* XCGLogger.swift */; };
+		C2CA07BA3E0DB6260584F8F04BF05747 /* QueryMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03F895197BA426ADAF6C45E58407CA /* QueryMessage.swift */; };
 		CE9D13006B14F381D57B5565A22A5C96 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7126FC161226D96930E1024FCAD08B20 /* Operators.swift */; };
 		CEEBEDB9FEA7012B909B30ECEEFB62F6 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFF7368BCD72E014A705240AA5D6664 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF089D34A0AB2FE80C62D73D457670A5 /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D85F0B7AC37580F1680F1337635E87 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0004C3ABA3C0829E4B6A61F0199E8ED /* LockMessage-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A8689C4D820224FA0C2CCE32BC30FC /* LockMessage-iOS-dummy.m */; };
 		D0A1A01C3755C6E45F1C8DAB0B71A741 /* ObjectiveCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBDB6C115708BF62D5F9EC26DB6D1E /* ObjectiveCMarker.m */; };
 		D21779BD4A268C3DF74B275286059FE8 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 539BC41293B272060A1BB03AEE7F2169 /* ReachabilitySwift-dummy.m */; };
 		D48EF33E5E525391D0DBC1831752E445 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8B1AD8004F58E450ABCE5A3A9E14C2 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D53456A18059D8AF0AE2119A60EAFF00 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63442C1AB581BB4E2A4A20C50B834E3D /* Gloss.swift */; };
 		D5B13A6BA5D17612F6C39A8B58229C0E /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1843D92B922F9FF689651713B96DC33 /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D9F88D6031852245BC66C9778A8C6B8C /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C699E610A78FEE9ED2BBC2F66D048AC9 /* ResponseMessage.swift */; };
+		D7499090B66068C11E5A70C5A53DA1D9 /* LockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51DF1F63DB8184700795570D7B674E /* LockMessage.swift */; };
 		DA25B23E0BA5D5973D6B396E4138B1A8 /* LogDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEBBE794C1BA0F395FD002B5E2D4BB /* LogDetails.swift */; };
 		DA5C3EFD114F11DFB1194AD38B78443A /* XcodeColorsLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D9A9C2AC7B81E586535FDAD544A0B /* XcodeColorsLogFormatter.swift */; };
-		DC01FC608648CB32EADE65BA4ECEB49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACC0F39C0990676AFFC7BAE525771E1 /* Foundation.framework */; };
-		DEE35A66D784A00B6D0398EFB053CA80 /* MergeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382A27A0AB6861602DEE87925096363 /* MergeJson.swift */; };
-		E0900D08AFC27190215A28844C13F088 /* QueryMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B05747509904B465B125EA6C14952 /* QueryMessage.swift */; };
+		DC7DBF142A022057ED68464D48E0D7CC /* Phonelock.h in Headers */ = {isa = PBXBuildFile; fileRef = 74918017ED6BB05A742F153E25DD8BA5 /* Phonelock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEF7272EDA46D8D5771181DA94A21E5A /* MergeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08435813A8D2839F1AA62EA41F38DA68 /* MergeJson.swift */; };
 		E347485D0D3928361207901E99FF6623 /* Pods-Watch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1127FD297A33B01882CD5535B1FE9D66 /* Pods-Watch Extension-dummy.m */; };
-		E4987318379CAD4200686B79E1E83EC5 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AD80D610FCD69FC356808619FA517 /* Gloss.framework */; };
+		E3CCF8FE5CB1357CF7BC798D5EE3FBB2 /* QueryMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03F895197BA426ADAF6C45E58407CA /* QueryMessage.swift */; };
+		E3E7071676E8D916E044E14BB2A3D82D /* Gloss+ToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B73792B865D130A3E3A5779B2C518A /* Gloss+ToData.swift */; };
 		E5E9061C8D7D53DB622214F846FCAC16 /* DispatchQueue+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8151146C884D87B02C33A210C9889 /* DispatchQueue+XCGAdditions.swift */; };
 		E6F802C2D8A03B364F8E2175F040E28A /* Gloss-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 839F8C58B0DD63287724C0E0F98389DC /* Gloss-watchOS-dummy.m */; };
+		E70480D653F581D556560F3D7B42CDF8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF394C92159F46121D69113FD4EC8BE /* Message.swift */; };
 		E8035FBC634E5ACE755707AAC33A5470 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74420200A06DD07ADA94C326B5FF6DE4 /* ObjcExceptionBridging.framework */; };
-		E8698D3A2743E45891170FA356666EA5 /* MergeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382A27A0AB6861602DEE87925096363 /* MergeJson.swift */; };
+		E87FC6786948798684BB1A645C371E8E /* LockMessage-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E29915B8AFBB1B8BA46F028EDCA358F2 /* LockMessage-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9DC4E652FEE3833F4DBA5C32F6FE0AC /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427313AC8FA9FC1ADC9F5259786FB077 /* Decoder.swift */; };
-		EB5E7CA332A848EECE5E91FACA7A761B /* LockMessage-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC12F7A4D08F43CEDAA0C3C9BD4DA0 /* LockMessage-watchOS-dummy.m */; };
-		ED2A53DF8814E8AD28D6A22D39A9964B /* Watchlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B9E08E8B3CD9A6E97860D428F66225 /* Watchlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB94526F72E178705B70C9CC63C1F82 /* LockMessage-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ACBFFB31089AB0F74C968368E783BE /* LockMessage-iOS-dummy.m */; };
 		F22315D46DC779F43D718AE8AF782F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */; };
 		F3A833EFD41B6B025D21EA593B37E3A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C939FE5BADF50435B67943634130B526 /* SystemConfiguration.framework */; };
 		F3BB29B9CEF382649583BD83223E7943 /* Pods-Watch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D72C74F36D6CD35A9A7FD564B88970C4 /* Pods-Watch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F712B4BE25145A96DD7E78EA1945C8E8 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB28BBD542B6E89A967065DBF65FC0C /* Init.swift */; };
+		FA11F482876E9C59103DBADDD079C871 /* LockMessage-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D20FA1D3F58E2B305F8CC97BE75B62 /* LockMessage-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB5CF4DFD1DD29B8D6B05CB7DF76E2A2 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7126FC161226D96930E1024FCAD08B20 /* Operators.swift */; };
 		FC7B996FA3192E5E118C59E2A6980771 /* Gloss-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4A96165B89078C558823A84099E9AC /* Gloss-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC96C0666F731D91530A3BBEC920354 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35C0C13D1B54CC3A7FB2C18C264B86 /* Init.swift */; };
 		FE9EF4EFB9B56EBDD5D4600DEFE5683F /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F75037BEF8810F849E793C86CE8644B /* FileDestination.swift */; };
 		FF68831B4DD04F59F5513E1400E82048 /* FileNameFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920ABE8887461B32DA5713CABBE8110 /* FileNameFilter.swift */; };
 /* End PBXBuildFile section */
@@ -148,7 +150,14 @@
 			remoteGlobalIDString = C010DA92A2380017F039E604366FA953;
 			remoteInfo = Starscream;
 		};
-		7F3695E1F1021F517F07F2EB61C53802 /* PBXContainerItemProxy */ = {
+		73929C3191019B5FEF65AF6BDDEA7969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4C7426D3F39B0070FA182D64FB70574;
+			remoteInfo = "Gloss-iOS";
+		};
+		86BA74A47414CFEC8D321E37DCD5B28D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -159,7 +168,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A5072FB145A8660E7C051811F654638;
+			remoteGlobalIDString = 6D71DEC96B25A3C20E234877E868917C;
 			remoteInfo = "LockMessage-watchOS";
 		};
 		96E50C9C6AB59280BAA08526D14C651B /* PBXContainerItemProxy */ = {
@@ -187,15 +196,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0B85F654468655768C8692B28BD782D4;
+			remoteGlobalIDString = 8A7F99EFCD236453321AAA0939EB2C22;
 			remoteInfo = "LockMessage-iOS";
-		};
-		C62A026A5C249BE790F9BEDC743A6C9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4C7426D3F39B0070FA182D64FB70574;
-			remoteInfo = "Gloss-iOS";
 		};
 		EB5B863E45ED166ACD78A1844EEF18D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -207,11 +209,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0093E6DE166042CCEEEE401B9DCC0267 /* LockMessage-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LockMessage-iOS-prefix.pch"; sourceTree = "<group>"; };
+		025B6F82988433D2BFDF69E3EB0FDB13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034BB89DBE0330E3E9073B89716229B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A96253F8335DAFA3C2FDB912EE241C /* LockMessage-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "LockMessage-watchOS.modulemap"; path = "../LockMessage-watchOS/LockMessage-watchOS.modulemap"; sourceTree = "<group>"; };
 		04293F8BE58D17BD170D5A11E0C68DEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Gloss-watchOS/Info.plist"; sourceTree = "<group>"; };
 		0643326D1BF9754BD0964457EE05700D /* BaseQueuedDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseQueuedDestination.swift; path = Sources/XCGLogger/Destinations/BaseQueuedDestination.swift; sourceTree = "<group>"; };
+		08435813A8D2839F1AA62EA41F38DA68 /* MergeJson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MergeJson.swift; sourceTree = "<group>"; };
 		08EA9CA3C2A24B58257536FBF31FAF43 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		0A35C0C13D1B54CC3A7FB2C18C264B86 /* Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
 		0AB31CE94A530FF23ACB53A7355A382E /* Pods-Lockaway-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lockaway-resources.sh"; sourceTree = "<group>"; };
 		0B41FF374BF20AEFBFC171FEC1C680BC /* Pods-Lockaway-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lockaway-umbrella.h"; sourceTree = "<group>"; };
 		0CFF7368BCD72E014A705240AA5D6664 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -221,36 +226,34 @@
 		0FB05A82D41E309373E12A7CC412967A /* DestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DestinationProtocol.swift; path = Sources/XCGLogger/Destinations/DestinationProtocol.swift; sourceTree = "<group>"; };
 		10ED957550AA34696314AD154D30E11A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1127FD297A33B01882CD5535B1FE9D66 /* Pods-Watch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watch Extension-dummy.m"; sourceTree = "<group>"; };
-		128B05747509904B465B125EA6C14952 /* QueryMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QueryMessage.swift; sourceTree = "<group>"; };
 		12DEBBE794C1BA0F395FD002B5E2D4BB /* LogDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogDetails.swift; path = Sources/XCGLogger/Misc/LogDetails.swift; sourceTree = "<group>"; };
 		131F0B0432D401F1CD6543E7B329F033 /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
 		136C3B57F468C5209C97F7A4C76D8137 /* FilterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterProtocol.swift; path = Sources/XCGLogger/Filters/FilterProtocol.swift; sourceTree = "<group>"; };
-		13B9E08E8B3CD9A6E97860D428F66225 /* Watchlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Watchlock.h; sourceTree = "<group>"; };
 		172AD80D610FCD69FC356808619FA517 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE0682F3A28A017B1292A23C03351CC /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
 		1AE4CB0A066DE6B04F7CE7DC80AF8CC4 /* Gloss-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Gloss-watchOS.modulemap"; path = "../Gloss-watchOS/Gloss-watchOS.modulemap"; sourceTree = "<group>"; };
 		1C462A3E96C3DD9E669ECA68957CAE5D /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		1CAE4ED65FB58CE7CA74CF966A3E4031 /* URL+XCGAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+XCGAdditions.swift"; path = "Sources/XCGLogger/Extensions/URL+XCGAdditions.swift"; sourceTree = "<group>"; };
+		1F51DF1F63DB8184700795570D7B674E /* LockMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LockMessage.swift; sourceTree = "<group>"; };
 		21C7F72DF2D6A855DFF083A1781AC353 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		22D640F40B683B9A4FC866F7037B3A36 /* UserInfoFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfoFilter.swift; path = Sources/XCGLogger/Filters/UserInfoFilter.swift; sourceTree = "<group>"; };
-		2382A27A0AB6861602DEE87925096363 /* MergeJson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MergeJson.swift; sourceTree = "<group>"; };
 		24CE0906303AB8F1A205E0F77A21D7EE /* Base64LogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64LogFormatter.swift; path = Sources/XCGLogger/LogFormatters/Base64LogFormatter.swift; sourceTree = "<group>"; };
-		26FD0B8F769E051FBF1967B439DC148E /* LockMessage-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LockMessage-watchOS.xcconfig"; path = "../LockMessage-watchOS/LockMessage-watchOS.xcconfig"; sourceTree = "<group>"; };
+		29696E335EA4327909C94132ED3276B9 /* LockMessage-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "LockMessage-iOS.modulemap"; sourceTree = "<group>"; };
 		2BB8D9C86FED04F3E295B265E9651791 /* Pods-Lockaway.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Lockaway.modulemap"; sourceTree = "<group>"; };
 		2D398051021E4F3333FC198E6F32FCF1 /* Pods-Lockaway-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lockaway-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F5447B805211255636A20248385594F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../LockMessage-watchOS/Info.plist"; sourceTree = "<group>"; };
 		2F903D377A130AE1F912E3C640459CEA /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
 		30C0E06DF1B5429D815A6F3FE9513DA7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33708D28341F8041B7E1619B3FCDE5C4 /* LockedStateMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LockedStateMessage.swift; sourceTree = "<group>"; };
 		35ACA445849867D7BF301DAE02F4DDF8 /* Pods-Watch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Watch Extension.modulemap"; sourceTree = "<group>"; };
 		368A52C6E05A327C0F1B4042AC96325E /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReachabilitySwift.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A6A5608C883753CD1504D42D3E9B68 /* LockMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LockMessage.framework; path = "LockMessage-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B63F1F10DC38D1CF24B0431884D7E88 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		3CE229BFD54F5709E9CF09F9D7978B70 /* ExtensionDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDecodable.swift; path = Sources/ExtensionDecodable.swift; sourceTree = "<group>"; };
+		3F54ECF24953B5A70F9744A393DA0B6B /* Watchlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Watchlock.h; sourceTree = "<group>"; };
 		4038FD6E8FBC1A019CE9475C64409544 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		41AD82B84526E8A9BE749B7244DDCF0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D20FA1D3F58E2B305F8CC97BE75B62 /* LockMessage-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LockMessage-watchOS-umbrella.h"; path = "../LockMessage-watchOS/LockMessage-watchOS-umbrella.h"; sourceTree = "<group>"; };
 		427313AC8FA9FC1ADC9F5259786FB077 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
-		42FC12F7A4D08F43CEDAA0C3C9BD4DA0 /* LockMessage-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LockMessage-watchOS-dummy.m"; path = "../LockMessage-watchOS/LockMessage-watchOS-dummy.m"; sourceTree = "<group>"; };
-		4403FECB8790286C1EC83F2E990C50DB /* Gloss+ToData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Gloss+ToData.swift"; sourceTree = "<group>"; };
 		44FFAE9C6B503868ABF8B51D98AFFA29 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
 		488FF3488E01E5E041E408D576D6F4CD /* Pods-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		4CDB47685F71AB3ED4DC33661E7BC804 /* LogFormatterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogFormatterProtocol.swift; path = Sources/XCGLogger/LogFormatters/LogFormatterProtocol.swift; sourceTree = "<group>"; };
@@ -259,8 +262,6 @@
 		53D3C2A83D9CF3C825AE1ECF40CC875F /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
 		54EDBC923BC436267509058687F7857F /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/XCGLogger/Destinations/BaseDestination.swift; sourceTree = "<group>"; };
 		578455B02B9288451DB3AA54089C111A /* Gloss-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Gloss-iOS.modulemap"; sourceTree = "<group>"; };
-		58CACF845463EC73D397F74ED672E242 /* LockMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LockMessage.swift; sourceTree = "<group>"; };
-		5AF479D08C1471F207B9E1A673F7284D /* LockMessage-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "LockMessage-iOS.modulemap"; sourceTree = "<group>"; };
 		5BFA6C088C4EDE323ED48455BF552A98 /* TagFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagFilter.swift; path = Sources/XCGLogger/Filters/TagFilter.swift; sourceTree = "<group>"; };
 		5DCA3468FBBB9FE68F00E35925D71199 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		5DE7F8AB6A4D3BB57F40C9F781E2432F /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
@@ -270,29 +271,34 @@
 		6496008EEB67CEBBE188929E73906901 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6920ABE8887461B32DA5713CABBE8110 /* FileNameFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileNameFilter.swift; path = Sources/XCGLogger/Filters/FileNameFilter.swift; sourceTree = "<group>"; };
 		699597E1F0D1A95FB6F2A123AAD19445 /* Pods-Watch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E5E426D5BA548CAE606DE66765C3B7B /* LockedStateMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LockedStateMessage.swift; sourceTree = "<group>"; };
 		6F1802EEEFE47E3B30761FE82CB46EE5 /* HelperFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelperFunctions.swift; path = Sources/XCGLogger/Misc/HelperFunctions.swift; sourceTree = "<group>"; };
+		71248D026910580A526DCF43B89DE7B0 /* LockMessage-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LockMessage-watchOS-prefix.pch"; path = "../LockMessage-watchOS/LockMessage-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		7126FC161226D96930E1024FCAD08B20 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		71327EF79713D108387E3F1844BBDFFC /* Pods_Lockaway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lockaway.framework; path = "Pods-Lockaway.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74420200A06DD07ADA94C326B5FF6DE4 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcExceptionBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74918017ED6BB05A742F153E25DD8BA5 /* Phonelock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Phonelock.h; sourceTree = "<group>"; };
+		749337EB71F41A98AAE34EF9CF722830 /* LockMessage-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LockMessage-iOS.xcconfig"; sourceTree = "<group>"; };
 		7575E4A5DE4C290085B36BD4E1914FD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A791D5AC78BE746396241609F90FE8A /* ObjcExceptionBridging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjcExceptionBridging.modulemap; sourceTree = "<group>"; };
 		7ACC0F39C0990676AFFC7BAE525771E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7AE7FF80096ED0667F0B6F197DF54C4F /* HelloMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
 		7E0C463318D106471E810D5BE40A0AE7 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
-		7E33E6E1EEB2C113C4E8C4D715B297F5 /* Phonelock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Phonelock.h; sourceTree = "<group>"; };
 		7E8A02AE35E6A51C6A0DBADE32AB3FF2 /* AutoRotatingFileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRotatingFileDestination.swift; path = Sources/XCGLogger/Destinations/AutoRotatingFileDestination.swift; sourceTree = "<group>"; };
 		80D0860A45990EFFC7E9989857714A62 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
 		81727D862094AD2C3C0890800C90E12B /* DevFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DevFilter.swift; path = Sources/XCGLogger/Filters/DevFilter.swift; sourceTree = "<group>"; };
+		82EC26FD20ED8E333C6A8D0F043A7AD0 /* ResponseMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
 		839F8C58B0DD63287724C0E0F98389DC /* Gloss-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Gloss-watchOS-dummy.m"; path = "../Gloss-watchOS/Gloss-watchOS-dummy.m"; sourceTree = "<group>"; };
 		83D85F0B7AC37580F1680F1337635E87 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
+		84A30F2C2989A8644A464CA936F94753 /* LockMessage-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LockMessage-watchOS-dummy.m"; path = "../LockMessage-watchOS/LockMessage-watchOS-dummy.m"; sourceTree = "<group>"; };
 		8C5F156C5788E11479A65E71C4DD42ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CCB52A7960C1523365D5072EF903BFF /* LockMessage-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LockMessage-watchOS-umbrella.h"; path = "../LockMessage-watchOS/LockMessage-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		8CF394C92159F46121D69113FD4EC8BE /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8DE6539C6C6E0D418C73B7F32EE5A267 /* Pods-Lockaway-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lockaway-dummy.m"; sourceTree = "<group>"; };
 		8FA520EA86C926DB5C1411BED98CA97D /* Pods-Lockaway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lockaway.debug.xcconfig"; sourceTree = "<group>"; };
-		91AE2D84B0B94B4659B7E73BA3404528 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		91070259B94473AB1FB28F176565D41E /* OfflineMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OfflineMessage.swift; sourceTree = "<group>"; };
 		9203B6685E14CA779523A00E5CB989DA /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = "Gloss-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9651913E6FD7D70DCFD23315D5628BFB /* AppleSystemLogDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleSystemLogDestination.swift; path = Sources/XCGLogger/Destinations/AppleSystemLogDestination.swift; sourceTree = "<group>"; };
+		96B73792B865D130A3E3A5779B2C518A /* Gloss+ToData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Gloss+ToData.swift"; sourceTree = "<group>"; };
 		97A42901EA315FBFC5E1753D7961B1ED /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		999F5C2AF540C031052ECAF16FF6EF82 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		9BC2F667B6658696ACCF42A98F66640A /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
@@ -300,9 +306,9 @@
 		9F8149B6C805BE44FAFDA43126C656B4 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Starscream.modulemap; sourceTree = "<group>"; };
 		A0E0B007729AE32A006EB3D0EE34F153 /* Pods-Watch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A109E71414A66C99988D8481A0D95859 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Watch_Extension.framework; path = "Pods-Watch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A407E825B9DAD9C77DCF62720C6DAFCF /* LockMessage-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LockMessage-iOS-umbrella.h"; sourceTree = "<group>"; };
-		A5BCBDB09C5C5CCBE649196A3E9AA0E3 /* LockMessage-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "LockMessage-watchOS.modulemap"; path = "../LockMessage-watchOS/LockMessage-watchOS.modulemap"; sourceTree = "<group>"; };
 		A759A2D22E9F6D402B3AFDA360A2F17A /* PrePostFixLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrePostFixLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/PrePostFixLogFormatter.swift; sourceTree = "<group>"; };
+		A8DC5E4D128AF4E46180EDBB8C80CACD /* HelloMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloMessage.swift; sourceTree = "<group>"; };
+		AA0315BBE00BE57887B88B0268031322 /* LockMessage-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LockMessage-iOS-prefix.pch"; sourceTree = "<group>"; };
 		AB9C48FD62FF8E36798BA8074BC9CD6F /* ObjcExceptionBridging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjcExceptionBridging-dummy.m"; sourceTree = "<group>"; };
 		AD91E493CA5D0D9AAFA3F70748B57BB8 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = "Gloss-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD990BDB55B20EE27C5297C7ABA67CA2 /* LockMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LockMessage.framework; path = "LockMessage-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +320,8 @@
 		B5687F09FD19B4DEA84F7D3B7C10FCD1 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
 		B5C8CC79C44FC813218077D6E0EAD3C0 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		B65DFE1DA1007EB6C68399C3A818C07C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B8ACBFFB31089AB0F74C968368E783BE /* LockMessage-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LockMessage-iOS-dummy.m"; sourceTree = "<group>"; };
+		B97D31EDD2B4732A82B63A16C5D10CB5 /* LockMessage-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LockMessage-watchOS.xcconfig"; path = "../LockMessage-watchOS/LockMessage-watchOS.xcconfig"; sourceTree = "<group>"; };
 		BAB81A3F64EB985F7EDB71487CED037D /* Pods-Lockaway-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Lockaway-frameworks.sh"; sourceTree = "<group>"; };
 		BAE292E1DB42B103ED0FD98C09B63959 /* ANSIColorLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANSIColorLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/ANSIColorLogFormatter.swift; sourceTree = "<group>"; };
 		BD8B1AD8004F58E450ABCE5A3A9E14C2 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
@@ -323,59 +331,36 @@
 		C1CE09F28287F8F49D178F2AC0D80502 /* Pods-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		C30D9A9C2AC7B81E586535FDAD544A0B /* XcodeColorsLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XcodeColorsLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/XcodeColorsLogFormatter.swift; sourceTree = "<group>"; };
 		C385B2775B8EB50E030B54507D4F8BA5 /* ObjcExceptionBridging-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcExceptionBridging-prefix.pch"; sourceTree = "<group>"; };
-		C5A8689C4D820224FA0C2CCE32BC30FC /* LockMessage-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LockMessage-iOS-dummy.m"; sourceTree = "<group>"; };
-		C699E610A78FEE9ED2BBC2F66D048AC9 /* ResponseMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
 		C7F5B662730C27D16350749553E0AAE5 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		C9172307CF5D46F1D73F397F2A830134 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C939FE5BADF50435B67943634130B526 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		CC617DB2D6C8F2DAB6B7B3AA842AE457 /* Gloss-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Gloss-watchOS-prefix.pch"; path = "../Gloss-watchOS/Gloss-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		CD8B9DED58A7D788165D7608A601F183 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2E260838BFB39AB737DACCA8D1D3038 /* LockMessage-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LockMessage-watchOS-prefix.pch"; path = "../LockMessage-watchOS/LockMessage-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		D305CF1BCD0850136AF6C4088CBB5BB4 /* ObjcExceptionBridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjcExceptionBridging.h; path = Sources/ObjcExceptionBridging/include/ObjcExceptionBridging.h; sourceTree = "<group>"; };
 		D605A26D570C79B6C94F22282BF19BA9 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Source/Compression.swift; sourceTree = "<group>"; };
 		D6BD4EAB53CA87EED0402A1588680240 /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = Sources/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
 		D72C74F36D6CD35A9A7FD564B88970C4 /* Pods-Watch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watch Extension-umbrella.h"; sourceTree = "<group>"; };
 		D8B5A9A38BA76BD778A645F919AD12A5 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		DC12DA19E360AFF7A76920918796579C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../LockMessage-watchOS/Info.plist"; sourceTree = "<group>"; };
+		DB03F895197BA426ADAF6C45E58407CA /* QueryMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QueryMessage.swift; sourceTree = "<group>"; };
 		DE3AE8F6065AB2A5F4EA76E09152B8E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE73687E0C5C72191FED7E1CB4EF78A1 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		DFD8151146C884D87B02C33A210C9889 /* DispatchQueue+XCGAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+XCGAdditions.swift"; path = "Sources/XCGLogger/Extensions/DispatchQueue+XCGAdditions.swift"; sourceTree = "<group>"; };
 		E052675FEFB1F2F172450BCDDBE43046 /* ObjcExceptionBridging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjcExceptionBridging.xcconfig; sourceTree = "<group>"; };
+		E29915B8AFBB1B8BA46F028EDCA358F2 /* LockMessage-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LockMessage-iOS-umbrella.h"; sourceTree = "<group>"; };
 		E716D4A13AFF88C25B78E6C7AF9E8D2F /* Pods-Lockaway-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Lockaway-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E76729A814F485D3C808BFAC8009F0F0 /* Pods-Lockaway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lockaway.release.xcconfig"; sourceTree = "<group>"; };
-		EBB28BBD542B6E89A967065DBF65FC0C /* Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
 		EF96A1162F7D4A73DD15A02E9454CC3E /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		F38B7EC382881EC4C231D2ED51B3C4E2 /* Pods-Watch Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch Extension-resources.sh"; sourceTree = "<group>"; };
 		F476BB89DF7A664B526FE25F844D84BF /* Pods-Watch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch Extension-frameworks.sh"; sourceTree = "<group>"; };
 		F70BAA6F4EA3B9DC0A69E467F69D10B1 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		F76B01899305CB51B39DF6CB388394F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87F524212B45E1CA4F079A9100DD2D3 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		F8BBDB6C115708BF62D5F9EC26DB6D1E /* ObjectiveCMarker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCMarker.m; path = Sources/ObjcExceptionBridging/ObjectiveCMarker.m; sourceTree = "<group>"; };
 		FA084172C19E357E876156CE2253E562 /* Gloss-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-iOS-umbrella.h"; sourceTree = "<group>"; };
 		FB48F537E7C6BBF8D09D8744ACE35114 /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCGLogger.framework; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC1F056949B1EE19397A25E48776BB9C /* LockMessage-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LockMessage-iOS.xcconfig"; sourceTree = "<group>"; };
 		FEA659168C77BDA272CE0568BB74769C /* TestDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestDestination.swift; path = Sources/XCGLogger/Destinations/TestDestination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1112754B1B63F1C731B6D7F051476012 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				068A441BD431912342A879A4E3987851 /* Foundation.framework in Frameworks */,
-				8FAAA2241AD770F6C9318F3CD6E75816 /* Gloss.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19AB909B01364F677D0BBE8501E57BE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC01FC608648CB32EADE65BA4ECEB49E /* Foundation.framework in Frameworks */,
-				E4987318379CAD4200686B79E1E83EC5 /* Gloss.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E507099E858AA7BAB8ABF52EB534E5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +419,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF12C9DB70E56DA0F0C7B8F26823FC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4D9B44C2EA311DDAE46B0B1383A5A7 /* Foundation.framework in Frameworks */,
+				65911FFE6DF58187E4DA9AAE4B7158EB /* Gloss.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5EAEA0E8CB5093323EB81EAE47FF909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9700BB5E269F1BA0F7DC0B87319CD3FA /* Foundation.framework in Frameworks */,
+				3673C3F7A6E9C89A94E3AAEE355CAA88 /* Gloss.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F36BCF7658C4F6FE827CCB8E59DF05D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,15 +473,6 @@
 			);
 			name = "Pods-Watch Extension";
 			path = "Target Support Files/Pods-Watch Extension";
-			sourceTree = "<group>";
-		};
-		1B61160A479F65B26B78C5B19E5A3802 /* Watchlock */ = {
-			isa = PBXGroup;
-			children = (
-				13B9E08E8B3CD9A6E97860D428F66225 /* Watchlock.h */,
-			);
-			name = Watchlock;
-			path = Watchlock;
 			sourceTree = "<group>";
 		};
 		1D64736E919021F2EE58BEB118FD609E /* ReachabilitySwift */ = {
@@ -542,15 +536,6 @@
 			path = "../Target Support Files/ReachabilitySwift";
 			sourceTree = "<group>";
 		};
-		59BF5FF8CD082B7A020ECB11D843D474 /* Phonelock */ = {
-			isa = PBXGroup;
-			children = (
-				7E33E6E1EEB2C113C4E8C4D715B297F5 /* Phonelock.h */,
-			);
-			name = Phonelock;
-			path = Phonelock;
-			sourceTree = "<group>";
-		};
 		623B47A5C77D85EDF3D1EF0035BF6055 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,26 +566,6 @@
 				FB48F537E7C6BBF8D09D8744ACE35114 /* XCGLogger.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		733E44180C8C7D44FFFECD71F371C447 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC12DA19E360AFF7A76920918796579C /* Info.plist */,
-				F76B01899305CB51B39DF6CB388394F2 /* Info.plist */,
-				5AF479D08C1471F207B9E1A673F7284D /* LockMessage-iOS.modulemap */,
-				FC1F056949B1EE19397A25E48776BB9C /* LockMessage-iOS.xcconfig */,
-				C5A8689C4D820224FA0C2CCE32BC30FC /* LockMessage-iOS-dummy.m */,
-				0093E6DE166042CCEEEE401B9DCC0267 /* LockMessage-iOS-prefix.pch */,
-				A407E825B9DAD9C77DCF62720C6DAFCF /* LockMessage-iOS-umbrella.h */,
-				A5BCBDB09C5C5CCBE649196A3E9AA0E3 /* LockMessage-watchOS.modulemap */,
-				26FD0B8F769E051FBF1967B439DC148E /* LockMessage-watchOS.xcconfig */,
-				42FC12F7A4D08F43CEDAA0C3C9BD4DA0 /* LockMessage-watchOS-dummy.m */,
-				D2E260838BFB39AB737DACCA8D1D3038 /* LockMessage-watchOS-prefix.pch */,
-				8CCB52A7960C1523365D5072EF903BFF /* LockMessage-watchOS-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Lockaway-ios/Pods/Target Support Files/LockMessage-iOS";
 			sourceTree = "<group>";
 		};
 		7353AA3BA155C0BAFEE120C309662CA7 /* Support Files */ = {
@@ -756,35 +721,6 @@
 			path = "Target Support Files/Pods-Lockaway";
 			sourceTree = "<group>";
 		};
-		9A8F3C602F3204B02CF8E46BED8322F3 /* LockMessage */ = {
-			isa = PBXGroup;
-			children = (
-				59BF5FF8CD082B7A020ECB11D843D474 /* Phonelock */,
-				9B8E1340824B214583ED55835B049826 /* Source */,
-				733E44180C8C7D44FFFECD71F371C447 /* Support Files */,
-				1B61160A479F65B26B78C5B19E5A3802 /* Watchlock */,
-			);
-			name = LockMessage;
-			path = ../../LockMessage;
-			sourceTree = "<group>";
-		};
-		9B8E1340824B214583ED55835B049826 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				4403FECB8790286C1EC83F2E990C50DB /* Gloss+ToData.swift */,
-				7AE7FF80096ED0667F0B6F197DF54C4F /* HelloMessage.swift */,
-				EBB28BBD542B6E89A967065DBF65FC0C /* Init.swift */,
-				33708D28341F8041B7E1619B3FCDE5C4 /* LockedStateMessage.swift */,
-				58CACF845463EC73D397F74ED672E242 /* LockMessage.swift */,
-				2382A27A0AB6861602DEE87925096363 /* MergeJson.swift */,
-				91AE2D84B0B94B4659B7E73BA3404528 /* Message.swift */,
-				128B05747509904B465B125EA6C14952 /* QueryMessage.swift */,
-				C699E610A78FEE9ED2BBC2F66D048AC9 /* ResponseMessage.swift */,
-			);
-			name = Source;
-			path = Source;
-			sourceTree = "<group>";
-		};
 		9C29F312FBB11ED8427FB53CDA0D34B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,6 +742,15 @@
 			path = XCGLogger;
 			sourceTree = "<group>";
 		};
+		B41769C9EF8FB53EE2544CC3A28C3662 /* Watchlock */ = {
+			isa = PBXGroup;
+			children = (
+				3F54ECF24953B5A70F9744A393DA0B6B /* Watchlock.h */,
+			);
+			name = Watchlock;
+			path = Watchlock;
+			sourceTree = "<group>";
+		};
 		B78439542A75E110E2E9C2AFB8AF21B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,12 +765,51 @@
 			path = "../Target Support Files/XCGLogger";
 			sourceTree = "<group>";
 		};
+		CA34D846D85C64DC1AB3A905FA7A5365 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				96B73792B865D130A3E3A5779B2C518A /* Gloss+ToData.swift */,
+				A8DC5E4D128AF4E46180EDBB8C80CACD /* HelloMessage.swift */,
+				0A35C0C13D1B54CC3A7FB2C18C264B86 /* Init.swift */,
+				6E5E426D5BA548CAE606DE66765C3B7B /* LockedStateMessage.swift */,
+				1F51DF1F63DB8184700795570D7B674E /* LockMessage.swift */,
+				08435813A8D2839F1AA62EA41F38DA68 /* MergeJson.swift */,
+				8CF394C92159F46121D69113FD4EC8BE /* Message.swift */,
+				91070259B94473AB1FB28F176565D41E /* OfflineMessage.swift */,
+				DB03F895197BA426ADAF6C45E58407CA /* QueryMessage.swift */,
+				82EC26FD20ED8E333C6A8D0F043A7AD0 /* ResponseMessage.swift */,
+			);
+			name = Source;
+			path = Source;
+			sourceTree = "<group>";
+		};
 		CD1769C3697B1710B326709A8E7A754B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A8F3C602F3204B02CF8E46BED8322F3 /* LockMessage */,
+				CEF7125C635E6A597A75FA8CB4439963 /* LockMessage */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CEC1F2B5F7C019E8AD8ED368AF7825A7 /* Phonelock */ = {
+			isa = PBXGroup;
+			children = (
+				74918017ED6BB05A742F153E25DD8BA5 /* Phonelock.h */,
+			);
+			name = Phonelock;
+			path = Phonelock;
+			sourceTree = "<group>";
+		};
+		CEF7125C635E6A597A75FA8CB4439963 /* LockMessage */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1F2B5F7C019E8AD8ED368AF7825A7 /* Phonelock */,
+				CA34D846D85C64DC1AB3A905FA7A5365 /* Source */,
+				D1FC674F9A07E98B360E6CB50682B1B2 /* Support Files */,
+				B41769C9EF8FB53EE2544CC3A28C3662 /* Watchlock */,
+			);
+			name = LockMessage;
+			path = ../../LockMessage;
 			sourceTree = "<group>";
 		};
 		D03A570557C43DE402358118A51776CB /* Resources */ = {
@@ -834,6 +818,26 @@
 				F87F524212B45E1CA4F079A9100DD2D3 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D1FC674F9A07E98B360E6CB50682B1B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F5447B805211255636A20248385594F /* Info.plist */,
+				025B6F82988433D2BFDF69E3EB0FDB13 /* Info.plist */,
+				29696E335EA4327909C94132ED3276B9 /* LockMessage-iOS.modulemap */,
+				749337EB71F41A98AAE34EF9CF722830 /* LockMessage-iOS.xcconfig */,
+				B8ACBFFB31089AB0F74C968368E783BE /* LockMessage-iOS-dummy.m */,
+				AA0315BBE00BE57887B88B0268031322 /* LockMessage-iOS-prefix.pch */,
+				E29915B8AFBB1B8BA46F028EDCA358F2 /* LockMessage-iOS-umbrella.h */,
+				03A96253F8335DAFA3C2FDB912EE241C /* LockMessage-watchOS.modulemap */,
+				B97D31EDD2B4732A82B63A16C5D10CB5 /* LockMessage-watchOS.xcconfig */,
+				84A30F2C2989A8644A464CA936F94753 /* LockMessage-watchOS-dummy.m */,
+				71248D026910580A526DCF43B89DE7B0 /* LockMessage-watchOS-prefix.pch */,
+				41D20FA1D3F58E2B305F8CC97BE75B62 /* LockMessage-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Lockaway-ios/Pods/Target Support Files/LockMessage-iOS";
 			sourceTree = "<group>";
 		};
 		ED0409400BE4C4636816863244E9FC8B /* Support Files */ = {
@@ -890,24 +894,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D6D1BE3CBDCBB248C52B44B2528B3D8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				855C840112DACC8534689E10CE0DAD2B /* LockMessage-iOS-umbrella.h in Headers */,
-				3AEE0F5D0AF11B553DA7D2B375068C93 /* Phonelock.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		756A6B1068D2A4151FD32745E69390A2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				151D63F2CFE5DA70233BCF216522E73F /* LockMessage-watchOS-umbrella.h in Headers */,
-				ED2A53DF8814E8AD28D6A22D39A9964B /* Watchlock.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85ECB0A2ED5325C51DFEE845DBCD16B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -941,6 +927,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D74B225AB2D1256AA74DB20D6ABFEA43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87FC6786948798684BB1A645C371E8E /* LockMessage-iOS-umbrella.h in Headers */,
+				DC7DBF142A022057ED68464D48E0D7CC /* Phonelock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78B8B961C025B1F0B7E697E79EE1081 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA11F482876E9C59103DBADDD079C871 /* LockMessage-watchOS-umbrella.h in Headers */,
+				4BFA446CC63479CCBD8439CFE65302AF /* Watchlock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB83C92C57829ECBF2476EE75A045FC8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -960,24 +964,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0B85F654468655768C8692B28BD782D4 /* LockMessage-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 660CDB8EB06F5A4D975D025474AFD4E2 /* Build configuration list for PBXNativeTarget "LockMessage-iOS" */;
-			buildPhases = (
-				AD60FD4C1CA51C24F5C77A283EA17A2D /* Sources */,
-				1112754B1B63F1C731B6D7F051476012 /* Frameworks */,
-				6D6D1BE3CBDCBB248C52B44B2528B3D8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A2948BC9E2C29281E2041C1A72465EB3 /* PBXTargetDependency */,
-			);
-			name = "LockMessage-iOS";
-			productName = "LockMessage-iOS";
-			productReference = AD990BDB55B20EE27C5297C7ABA67CA2 /* LockMessage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		2142A598F6ACA6C434709128E4489CA1 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0483E96D18976A9DDF000842E138E65 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
@@ -1020,24 +1006,6 @@
 			productReference = 71327EF79713D108387E3F1844BBDFFC /* Pods_Lockaway.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5A5072FB145A8660E7C051811F654638 /* LockMessage-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 20DBDFB58D5A481B3CFDC6C15DB8EA60 /* Build configuration list for PBXNativeTarget "LockMessage-watchOS" */;
-			buildPhases = (
-				CD859F9A652F4FF0190DDC3FFBB41DFA /* Sources */,
-				19AB909B01364F677D0BBE8501E57BE9 /* Frameworks */,
-				756A6B1068D2A4151FD32745E69390A2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6778D12A715AC750E8BFB51ECF6BC37B /* PBXTargetDependency */,
-			);
-			name = "LockMessage-watchOS";
-			productName = "LockMessage-watchOS";
-			productReference = 36A6A5608C883753CD1504D42D3E9B68 /* LockMessage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		5B0B5B8A1476F8AA333AA7B53F47E96B /* ObjcExceptionBridging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4195B567D4F3F2206FEDC07DA2C6626 /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging" */;
@@ -1053,6 +1021,42 @@
 			name = ObjcExceptionBridging;
 			productName = ObjcExceptionBridging;
 			productReference = B48C7643CCE6D67EFB0F2655C3F121E0 /* ObjcExceptionBridging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D71DEC96B25A3C20E234877E868917C /* LockMessage-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F398BEFBCCF07DCB4F97D8162C2A65A3 /* Build configuration list for PBXNativeTarget "LockMessage-watchOS" */;
+			buildPhases = (
+				FE23638A14AF45877F306F222A38242F /* Sources */,
+				CF12C9DB70E56DA0F0C7B8F26823FC50 /* Frameworks */,
+				D78B8B961C025B1F0B7E697E79EE1081 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EA8293BBB18CB10E74C2E4E104C0C49 /* PBXTargetDependency */,
+			);
+			name = "LockMessage-watchOS";
+			productName = "LockMessage-watchOS";
+			productReference = 36A6A5608C883753CD1504D42D3E9B68 /* LockMessage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A7F99EFCD236453321AAA0939EB2C22 /* LockMessage-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4321007475CD088308FCDF81952D42A /* Build configuration list for PBXNativeTarget "LockMessage-iOS" */;
+			buildPhases = (
+				C772BE19C3D1CFDB5EA599C0FB11CF50 /* Sources */,
+				E5EAEA0E8CB5093323EB81EAE47FF909 /* Frameworks */,
+				D74B225AB2D1256AA74DB20D6ABFEA43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BE5EB5D7FC3AFA816AF6B531DF44C5 /* PBXTargetDependency */,
+			);
+			name = "LockMessage-iOS";
+			productName = "LockMessage-iOS";
+			productReference = AD990BDB55B20EE27C5297C7ABA67CA2 /* LockMessage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A1C52459D515340981644C18DF367F42 /* Pods-Watch Extension */ = {
@@ -1183,8 +1187,8 @@
 			targets = (
 				E4C7426D3F39B0070FA182D64FB70574 /* Gloss-iOS */,
 				AB39756A3FAC536E102C9F3874D57284 /* Gloss-watchOS */,
-				0B85F654468655768C8692B28BD782D4 /* LockMessage-iOS */,
-				5A5072FB145A8660E7C051811F654638 /* LockMessage-watchOS */,
+				8A7F99EFCD236453321AAA0939EB2C22 /* LockMessage-iOS */,
+				6D71DEC96B25A3C20E234877E868917C /* LockMessage-watchOS */,
 				5B0B5B8A1476F8AA333AA7B53F47E96B /* ObjcExceptionBridging */,
 				3E6EDC9BA7117754E8BB5B3FA6D9ED91 /* Pods-Lockaway */,
 				A1C52459D515340981644C18DF367F42 /* Pods-Watch Extension */,
@@ -1309,23 +1313,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD60FD4C1CA51C24F5C77A283EA17A2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0513CFA605DC21F77953438F11B025BE /* Gloss+ToData.swift in Sources */,
-				90B490A6DB77995E8FE34ACBEFEF098E /* HelloMessage.swift in Sources */,
-				F712B4BE25145A96DD7E78EA1945C8E8 /* Init.swift in Sources */,
-				ABDBC18300FB05E82CE67A3B64BA94F9 /* LockedStateMessage.swift in Sources */,
-				D0004C3ABA3C0829E4B6A61F0199E8ED /* LockMessage-iOS-dummy.m in Sources */,
-				71D96D945598837AEC34FA0D3B5C0916 /* LockMessage.swift in Sources */,
-				DEE35A66D784A00B6D0398EFB053CA80 /* MergeJson.swift in Sources */,
-				A1F35FB0B77E128FB36CF8FE772E8858 /* Message.swift in Sources */,
-				50B4BCCB24E2FB01B9F378B4131C5A21 /* QueryMessage.swift in Sources */,
-				58A4814BC1F2C3249750F9D3E05B2894 /* ResponseMessage.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B138B23F6222B565BBE8F92315455124 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1343,30 +1330,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD859F9A652F4FF0190DDC3FFBB41DFA /* Sources */ = {
+		C772BE19C3D1CFDB5EA599C0FB11CF50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891E3775153E4A65AA291A29FBD23C87 /* Gloss+ToData.swift in Sources */,
-				7C3333BEFD1B7A1DD946CE5F8959F4FE /* HelloMessage.swift in Sources */,
-				C29FE22857DA09501422977FDD7A9B60 /* Init.swift in Sources */,
-				35774408C640292BB03DAB6C2E3E70EA /* LockedStateMessage.swift in Sources */,
-				EB5E7CA332A848EECE5E91FACA7A761B /* LockMessage-watchOS-dummy.m in Sources */,
-				A64663226F6ED6F15A33E37578B0AAAC /* LockMessage.swift in Sources */,
-				E8698D3A2743E45891170FA356666EA5 /* MergeJson.swift in Sources */,
-				08E9FB6E892CAE831D4D5848037EC56C /* Message.swift in Sources */,
-				E0900D08AFC27190215A28844C13F088 /* QueryMessage.swift in Sources */,
-				D9F88D6031852245BC66C9778A8C6B8C /* ResponseMessage.swift in Sources */,
+				2DCE1F6D5601309982D9EBAB7C630619 /* Gloss+ToData.swift in Sources */,
+				AD5AC98517D36597A596E94322E76F68 /* HelloMessage.swift in Sources */,
+				FDC96C0666F731D91530A3BBEC920354 /* Init.swift in Sources */,
+				6023AC4C3D708B77E70A26BA2D5FFF62 /* LockedStateMessage.swift in Sources */,
+				ECB94526F72E178705B70C9CC63C1F82 /* LockMessage-iOS-dummy.m in Sources */,
+				5B54408C54A5D78412E770BF2DEA1BAA /* LockMessage.swift in Sources */,
+				DEF7272EDA46D8D5771181DA94A21E5A /* MergeJson.swift in Sources */,
+				E70480D653F581D556560F3D7B42CDF8 /* Message.swift in Sources */,
+				C1A66E1FD126D1C38E561B9DEBCB62A1 /* OfflineMessage.swift in Sources */,
+				C2CA07BA3E0DB6260584F8F04BF05747 /* QueryMessage.swift in Sources */,
+				35AD1CA3F7BF620961FBE625238D4C94 /* ResponseMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE23638A14AF45877F306F222A38242F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E7071676E8D916E044E14BB2A3D82D /* Gloss+ToData.swift in Sources */,
+				6BEE80C27086C82277EEFB572F6295AC /* HelloMessage.swift in Sources */,
+				74458CD6FB12549D8D62052C3E8256A6 /* Init.swift in Sources */,
+				0DA7CB7B22064F1C81CA01541CF48620 /* LockedStateMessage.swift in Sources */,
+				B84058390D309766F060CB3BFECA2177 /* LockMessage-watchOS-dummy.m in Sources */,
+				D7499090B66068C11E5A70C5A53DA1D9 /* LockMessage.swift in Sources */,
+				322AF0D34CEFC032641A137F6C0346F5 /* MergeJson.swift in Sources */,
+				A1AB309F21A603E329C6F7F90BEF0726 /* Message.swift in Sources */,
+				312237D639C55E24C131131EFFC36CE3 /* OfflineMessage.swift in Sources */,
+				E3CCF8FE5CB1357CF7BC798D5EE3FBB2 /* QueryMessage.swift in Sources */,
+				865DD47E954F8E632A99DB9C5189925A /* ResponseMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		01BE5EB5D7FC3AFA816AF6B531DF44C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Gloss-iOS";
+			target = E4C7426D3F39B0070FA182D64FB70574 /* Gloss-iOS */;
+			targetProxy = 73929C3191019B5FEF65AF6BDDEA7969 /* PBXContainerItemProxy */;
+		};
 		120996B21B81110FFE443E6BB1C0BBE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LockMessage-iOS";
-			target = 0B85F654468655768C8692B28BD782D4 /* LockMessage-iOS */;
+			target = 8A7F99EFCD236453321AAA0939EB2C22 /* LockMessage-iOS */;
 			targetProxy = B26D0B4CD0B205B447DF7E76AA999A33 /* PBXContainerItemProxy */;
 		};
 		17F709E695C4BF8575565B3BA81FDB50 /* PBXTargetDependency */ = {
@@ -1390,7 +1402,7 @@
 		3CFE5A09BA28250C97AAEF8094E12726 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LockMessage-watchOS";
-			target = 5A5072FB145A8660E7C051811F654638 /* LockMessage-watchOS */;
+			target = 6D71DEC96B25A3C20E234877E868917C /* LockMessage-watchOS */;
 			targetProxy = 9347EDA9A68EAEBACB643745CBFC5003 /* PBXContainerItemProxy */;
 		};
 		65D4FF765AE175C9A12AC831AADD442C /* PBXTargetDependency */ = {
@@ -1405,12 +1417,6 @@
 			target = C010DA92A2380017F039E604366FA953 /* Starscream */;
 			targetProxy = 733E1CC86A8CBC05B3AC83420A8F87C5 /* PBXContainerItemProxy */;
 		};
-		6778D12A715AC750E8BFB51ECF6BC37B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Gloss-watchOS";
-			target = AB39756A3FAC536E102C9F3874D57284 /* Gloss-watchOS */;
-			targetProxy = 7F3695E1F1021F517F07F2EB61C53802 /* PBXContainerItemProxy */;
-		};
 		7159E860BE679B27EE7FCD4726B1C6DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
@@ -1423,11 +1429,11 @@
 			target = E4C7426D3F39B0070FA182D64FB70574 /* Gloss-iOS */;
 			targetProxy = A86E4AA484F1E629A071288368E97A8F /* PBXContainerItemProxy */;
 		};
-		A2948BC9E2C29281E2041C1A72465EB3 /* PBXTargetDependency */ = {
+		9EA8293BBB18CB10E74C2E4E104C0C49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Gloss-iOS";
-			target = E4C7426D3F39B0070FA182D64FB70574 /* Gloss-iOS */;
-			targetProxy = C62A026A5C249BE790F9BEDC743A6C9E /* PBXContainerItemProxy */;
+			name = "Gloss-watchOS";
+			target = AB39756A3FAC536E102C9F3874D57284 /* Gloss-watchOS */;
+			targetProxy = 86BA74A47414CFEC8D321E37DCD5B28D /* PBXContainerItemProxy */;
 		};
 		B8B1170E887655207C49057A35549D69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1557,42 +1563,6 @@
 			};
 			name = Release;
 		};
-		07D081A6F91889203BAD7F20E37D4BE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26FD0B8F769E051FBF1967B439DC148E /* LockMessage-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LockMessage-watchOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LockMessage;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
 		119BE5BBF920266B037B3BA04A29DC91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E052675FEFB1F2F172450BCDDBE43046 /* ObjcExceptionBridging.xcconfig */;
@@ -1626,6 +1596,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		1F7066BF0149C9E81137F6C947675213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749337EB71F41A98AAE34EF9CF722830 /* LockMessage-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-iOS/LockMessage-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LockMessage-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LockMessage-iOS/LockMessage-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LockMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		2C51466C5412755FAFCED61559C4C2DB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1771,6 +1776,42 @@
 			};
 			name = Debug;
 		};
+		3BA74DDE54CE82176335EFCD17FCA05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97D31EDD2B4732A82B63A16C5D10CB5 /* LockMessage-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LockMessage-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LockMessage;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		46A9382193574596B9C57A404E9042E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 488FF3488E01E5E041E408D576D6F4CD /* Pods-Watch Extension.debug.xcconfig */;
@@ -1811,6 +1852,41 @@
 			};
 			name = Debug;
 		};
+		555760DD3FEA632980BA912D43785134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749337EB71F41A98AAE34EF9CF722830 /* LockMessage-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-iOS/LockMessage-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LockMessage-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LockMessage-iOS/LockMessage-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LockMessage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		56E2C5D6A2548445F3E7B360173C64FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5DE7F8AB6A4D3BB57F40C9F781E2432F /* XCGLogger.xcconfig */;
@@ -1846,40 +1922,41 @@
 			};
 			name = Debug;
 		};
-		609D0225DE32506F03889B0D39E1F9D7 /* Release */ = {
+		7AB911CB9B33C42BACB88B800F9A54CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC1F056949B1EE19397A25E48776BB9C /* LockMessage-iOS.xcconfig */;
+			baseConfigurationReference = B97D31EDD2B4732A82B63A16C5D10CB5 /* LockMessage-watchOS.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-iOS/LockMessage-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LockMessage-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LockMessage-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LockMessage-iOS/LockMessage-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = LockMessage;
-				SDKROOT = iphoneos;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 		7D9B6B1CEAA9F9893F65D3D5369010E0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2025,42 +2102,6 @@
 			};
 			name = Release;
 		};
-		9FD7B697336243A458366E62E8A6647C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26FD0B8F769E051FBF1967B439DC148E /* LockMessage-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LockMessage-watchOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LockMessage-watchOS/LockMessage-watchOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LockMessage;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
 		A1F484E7FC6A8555898B8585B92DBBB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F903D377A130AE1F912E3C640459CEA /* Starscream.xcconfig */;
@@ -2140,41 +2181,6 @@
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
-		};
-		AFE31026A366F9C456C56E82D44AE69D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC1F056949B1EE19397A25E48776BB9C /* LockMessage-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LockMessage-iOS/LockMessage-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LockMessage-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LockMessage-iOS/LockMessage-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LockMessage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		BDDE8E2172B96E79E2DCDCF28F111D92 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2331,15 +2337,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20DBDFB58D5A481B3CFDC6C15DB8EA60 /* Build configuration list for PBXNativeTarget "LockMessage-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FD7B697336243A458366E62E8A6647C /* Debug */,
-				07D081A6F91889203BAD7F20E37D4BE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2363,15 +2360,6 @@
 			buildConfigurations = (
 				F04595477DFB85CC13A67F2FCB83A82F /* Debug */,
 				036EC7F298ABFBB35EEA82A5349C38FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		660CDB8EB06F5A4D975D025474AFD4E2 /* Build configuration list for PBXNativeTarget "LockMessage-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFE31026A366F9C456C56E82D44AE69D /* Debug */,
-				609D0225DE32506F03889B0D39E1F9D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2403,6 +2391,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A4321007475CD088308FCDF81952D42A /* Build configuration list for PBXNativeTarget "LockMessage-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7066BF0149C9E81137F6C947675213 /* Debug */,
+				555760DD3FEA632980BA912D43785134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4195B567D4F3F2206FEDC07DA2C6626 /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2426,6 +2423,15 @@
 			buildConfigurations = (
 				F53394CE83556974429AA7F698F95EE9 /* Debug */,
 				363143CDE3CDE4B22F62C7DEB74C1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F398BEFBCCF07DCB4F97D8162C2A65A3 /* Build configuration list for PBXNativeTarget "LockMessage-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB911CB9B33C42BACB88B800F9A54CE /* Debug */,
+				3BA74DDE54CE82176335EFCD17FCA05E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

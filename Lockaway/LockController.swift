@@ -38,16 +38,24 @@ class LockController: UIViewController {
         }
     }
     
-    func update(message: LockedStateMessage) {
+    func update(message: Message) {
         SVProgressHUD.dismiss()
         isLoading = false
-        switch message.state {
-        case .locked:
+
+        if let locked = message as? LockedStateMessage {
+            switch locked.state {
+            case .locked:
+                lock?.image = UIImage(named: "Locked")
+                self.message?.text = "Your Mac is currently locked"
+            case .unlocked:
+                lock?.image = UIImage(named: "Unlocked")
+                self.message?.text = "Your Mac is currently NOT locked"
+            }
+        }
+        
+        if message is OfflineMessage {
             lock?.image = UIImage(named: "Locked")
-            self.message?.text = "Your Mac is current locked"
-        case .unlocked:
-            lock?.image = UIImage(named: "Unlocked")
-            self.message?.text = "Your Mac is current NOT locked"
+            self.message?.text = "Your Mac is currently offline\n(which probably means it's locked)"
         }
     }
     
