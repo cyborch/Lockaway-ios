@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-fileprivate let PromotionUrl = "https://jsonpipe.cyborch.com/"
+fileprivate let PromotionUrl = "https://magicmaclock.cyborch.com/macosapp"
 let DiscoveredKey = "IsDiscovered"
 
 class IntroController: UIViewController {
