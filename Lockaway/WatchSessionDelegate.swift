@@ -23,6 +23,7 @@ class WatchSessionDelegate: NSObject, WCSessionDelegate {
     }()
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        log.debug("Activation completed with: \(activationState.rawValue)")
         if error != nil { log.error("Error activating watch session: \(error!)") }
         if activationState == .activated {
             socketDelegate.session = session
@@ -32,10 +33,12 @@ class WatchSessionDelegate: NSObject, WCSessionDelegate {
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
+        log.debug("sessionDidBecomeInactive")
         socketDelegate.session = nil
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
+        log.debug("sessionDidDeactivate")
         socketDelegate.session = nil
     }
     
