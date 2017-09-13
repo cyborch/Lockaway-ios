@@ -48,6 +48,12 @@ class IntroController: UIViewController {
                                   completionHandler: nil)
     }
     
+    @IBAction func debug(_ sender: Any) {
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
+            performSegue(withIdentifier: "Paired", sender: nil)
+        #endif
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ud = UserDefaults.standard
         ud.set(true, forKey: DiscoveredKey)
