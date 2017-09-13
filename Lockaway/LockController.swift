@@ -20,6 +20,7 @@ class LockController: UIViewController {
     @IBOutlet var message: UILabel?
     
     private let notificationDelegate = NotificationDelegate()
+    private var timeout: Timer?
     
     func showLoading() {
         isLoading = true
@@ -29,6 +30,15 @@ class LockController: UIViewController {
         }
         lock?.image = nil
         message?.text = "Getting locked state for your Mac"
+        
+        if timeout?.isValid ?? false {
+            timeout?.fireDate = Date().addingTimeInterval(5)
+        } else {
+            timeout = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { [weak self] timer in
+                guard self?.isLoading ?? false else { return }
+                self?.update(message: OfflineMessage())
+            })
+        }
     }
     
     override func viewDidLoad() {
