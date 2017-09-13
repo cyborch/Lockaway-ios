@@ -21,23 +21,23 @@ class Delegate: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
-        #if DEBUG
-            print("Got data message from app: \(String(data: messageData, encoding: .ascii) ?? "nil")")
-        #endif
-        if let message = Message.from(data: messageData) as? LockedStateMessage {
-            let image = message.state == .locked ? "Locked" : "Unlocked"
-            locked?.setImage(UIImage(named: image))
-            return
-        }
+        guard let message = Message.from(data: messageData) else { return }
+        handler(message: message)
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        #if DEBUG
-            print("Got dictionary message from app: \(message)")
-        #endif
-        if let message = Message.from(json: message) as? LockedStateMessage {
-            let image = message.state == .locked ? "Locked" : "Unlocked"
+        guard let message = Message.from(json: message) else { return }
+        handler(message: message)
+    }
+
+    func handler(message: Message) {
+        if message is LockedStateMessage {
+            let image = (message as! LockedStateMessage).state == .locked ? "Locked" : "Unlocked"
             locked?.setImage(UIImage(named: image))
+            return
+        }
+        if message is OfflineMessage {
+            locked?.setImage(UIImage(named: "Locked"))
             return
         }
     }

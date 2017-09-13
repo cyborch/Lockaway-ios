@@ -14,6 +14,8 @@ import Gloss
 
 class InterfaceController: WKInterfaceController {
 
+    var timeout: Timer?
+    
     @IBOutlet var locked: WKInterfaceImage? {
         didSet {
             delegate.locked = locked
@@ -28,31 +30,47 @@ class InterfaceController: WKInterfaceController {
         return session
     }
 
+    func startActivity() {
+        locked?.setImageNamed("Activity")
+        locked?.startAnimatingWithImages(in: NSRange(location: 1, length: 30), duration: 1.0, repeatCount: 5)
+        
+        if timeout?.isValid ?? false {
+            timeout?.fireDate = Date().addingTimeInterval(5)
+        } else {
+            timeout = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { [weak self] timer in
+                self?.locked?.setImage(UIImage(named: "Locked"))
+            })
+        }
+    }
+    
     func sendLockMessage(source: LockMessage.Source) {
         let message = LockMessage(source: source)
         session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: nil)
     }
     
-    func handler(reply: JSON) {
-        if let message = Message.from(json: reply) as? LockedStateMessage {
-            let image = message.state == .locked ? "Locked" : "Unlocked"
-            locked?.setImage(UIImage(named: image))
-            return
-        }
+    func sendQueryMessage() {
+        let message = QueryMessage(query: .isLocked)
+        session.sendMessage(message.toJSON()!, replyHandler: nil, errorHandler: nil)
     }
-
+    
     @IBAction func lock() {
+        startActivity()
         sendLockMessage(source: .button)
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        session.activate()
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        startActivity()
+        if session.activationState == .activated {
+            sendQueryMessage()
+        } else {
+            session.activate()
+        }
     }
     
     override func didDeactivate() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,12 +13,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
                     <items>
-                        <imageView width="136" height="106" alignment="left" image="Unlocked" contentMode="scaleAspectFit" id="B7M-kh-H7l"/>
-                        <button width="1" alignment="left" title="Lock" id="gxB-TA-u0c">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Lock" id="gxB-TA-u0c">
                             <connections>
                                 <action selector="lock" destination="AgC-eL-Hgc" id="bew-Pf-EmH"/>
                             </connections>
                         </button>
+                        <imageView height="100" alignment="center" verticalAlignment="center" image="Activity" contentMode="scaleAspectFit" animationDuration="5" id="B7M-kh-H7l"/>
                     </items>
                     <connections>
                         <outlet property="locked" destination="B7M-kh-H7l" id="L4C-4C-gH6"/>
